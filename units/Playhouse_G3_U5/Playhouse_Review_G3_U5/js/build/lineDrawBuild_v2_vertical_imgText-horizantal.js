@@ -44,7 +44,7 @@ function buildLineDrawBody(aObj) {
             htmlStmt += '</div>';
         htmlStmt += '</div>';
 
-        htmlStmt += '<div class="cont_ht_sf">';
+        htmlStmt += '<div class="">';
         htmlStmt += '<div class="all_cont justify-content-start justify-content-lg-center">';
        
         var currentQue = 1;

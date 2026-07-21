@@ -25,7 +25,7 @@ var fillin_data = {
   "mainTitleIcon"         : "../images/pages/sb-icons/phonics_main_title_icon.png",
   "mainTitleIconPos"      : {"right": "-20px"},
   "mainTitleAudio"        : "../audios/page_45/PHONICS.mp3",
-  "subTitleTextLeft"      : "<span class='orange_text'>1</span> Write the <span class='orange_text'>oo</span> word below each picture.",
+  "subTitleTextLeft"      : "<span class='orange_text'>3</span> Write the <span class='orange_text'>oo</span> word below each picture.",
   "subTitleTextRight"     : "",
   "subTitleIcons"         : [""],
   "subTitleAudio"         : "../audios/under.mp3",

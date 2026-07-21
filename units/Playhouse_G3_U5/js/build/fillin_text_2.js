@@ -41,11 +41,12 @@ function buildFillInBody(aObj) {
 					htmlStmt += "<br><p class='subTitleTextRight'>" + aObj.subTitleTextRight + " </p>";
 				htmlStmt += "</div>";
 			}else {
-				htmlStmt += "<div class='page_sub_title d-flex'>";
+				htmlStmt += "<div class='page_sub_title'>";
 					htmlStmt += "<p> " + aObj.subTitleTextLeft + " </p>";
 					for (var sicons = 0 ; sicons < aObj.subTitleIcons.length ; sicons++) {
 						htmlStmt += "<img src='" + aObj.subTitleIcons[sicons] + "'/>";
 					}
+					htmlStmt +="<br/>"
 					htmlStmt += "<p class='subTitleTextRight'>" + aObj.subTitleTextRight + " </p>";
 				htmlStmt += "</div>";
 			}

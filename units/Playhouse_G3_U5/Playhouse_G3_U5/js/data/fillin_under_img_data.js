@@ -58,7 +58,7 @@ var fillin_data = {
             "audio": "../audios/page_25/under.mp3",
             "audioenable": "default", // correct (or) default
             "image": "",
-            "answer": ["No, there aren't any salt"],
+            "answer": ["No, there is not any salt"],
             "strictcase": "no", // yes (or) no
             "type": "text", // text (or) number
         },

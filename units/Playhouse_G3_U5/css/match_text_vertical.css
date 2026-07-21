@@ -65,7 +65,7 @@ body {
 .txtHolder {
   width: 100px;
   padding: 8px;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .drag .txtHolder {   
@@ -123,11 +123,11 @@ body {
   /* height: 60%; */
 }
 .drag {
-  height: 112px;
+  height: 90px;
   margin: 1vh 0;
 }
 .drop {
-  height: 112px;
+  height: 90px;
   margin: 1vh 0;
 }
 
@@ -216,11 +216,11 @@ body {
 
 @media (max-width: 1399.98px) {
   .drag {
-    height: 112px;
+    height: 90px;
     margin: 1vh 0;
   }
   .drop {
-    height: 112px;
+    height: 90px;
     margin: 1vh 0;
   }
 }
@@ -268,7 +268,7 @@ body {
         padding: 8px;        
     } */
   .drag {
-    height: 100px;
+    height: 90px;
   }
   .drop {
     height: auto;

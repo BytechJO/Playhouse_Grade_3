@@ -24,6 +24,7 @@
     right: 0px;
     width: 265px;
     height: 120px;
+        z-index: 99999;
     transform-origin: right;
     transform: rotate(-92deg);
 }

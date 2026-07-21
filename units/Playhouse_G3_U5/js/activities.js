@@ -229,7 +229,14 @@ function initiateActivityType(aActTyp, aActSubType) {
         theActivity = new DragAndDrop(quePart, dragndrop_data);
     } else if (aActTyp == 'coloring') {
         theActivity = new Coloring(quePart, coloring_data);
-    } else if (aActTyp == 'standAlone') {
+    } else if (aActTyp == 'readingcircle') {
+        theActivity = new ReadingCircle(quePart, readingcircle_data);
+    } else if (aActTyp == 'howmuchmany') {
+        theActivity = new HowMuchMany(quePart, howmuchmany_data);
+    }else if (aActTyp == 'dragingredients') {
+        theActivity = new DragIngredients(quePart, dragingredients_data);
+    } 
+    else if (aActTyp == 'standAlone') {
         theActivity = "standAlone";
 
     } else {

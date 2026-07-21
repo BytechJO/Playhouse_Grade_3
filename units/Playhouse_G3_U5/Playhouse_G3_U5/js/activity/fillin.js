@@ -83,8 +83,12 @@ FillIn.prototype = {
             if((_uAns.length>0) && (_cAns.length == _uAns.length)){
                 for(var cc=0;cc<_cAns.length;cc++){                    
                     _cAns[cc] = (_case == 'yes')? _cAns[cc]: _cAns[cc].toLowerCase();  
-                   _cAns[cc] = (_cAns[cc]).replace(/\s/g, '');
-                   _uAns[cc] = (_uAns[cc]).replace(/\s/g, '');
+                   _cAns[cc] = (_cAns[cc]).replace(/\s ./g, '');
+                   _uAns[cc] = (_uAns[cc]).replace(/\s ./g, '');
+                   console.log(
+    "Correct:", _cAns[cc],
+    "User:", _uAns[cc]
+);
                     if(_cAns[cc] == _uAns[cc]){
                         _corr++;
                         // if(_isReadOnly[cc] != 1)  {

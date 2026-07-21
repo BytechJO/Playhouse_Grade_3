@@ -95,59 +95,96 @@ MCQ.prototype = {
         }
     },
     validate:function(){
-        var self = this;
-        var ob = this.ob;
-        var allCorrect = false; 
-        
-        var $area= $(ob.activity_area);
-        var numOfQs =  $area.find('.que').length;
-        var resultArr = [];   
-        $area.find('.que').each(function(){
-            var qIndx = parseInt($(this).data('qno'));
-            var fDataObj = ((ob.data_obj).questions[qIndx-1]);
-            resultArr[qIndx-1] = 0;
-            var _cAns = getIntArray(fDataObj.answer); 
+    var self = this;
+    var ob = this.ob;
+    var allCorrect = false;
+
+    var $area = $(ob.activity_area);
+    var numOfQs = $area.find('.que').length;
+    var resultArr = [];
+
+    $area.find('.que').each(function(){
+
+        var qIndx = parseInt($(this).data('qno'));
+        var fDataObj = (ob.data_obj).questions[qIndx-1];
+
+        resultArr[qIndx-1] = 0;
+
+        if(ob.data_obj.select == "multiple"){
+
+            var correctAnswers = getIntArray(fDataObj.answer);
+            var selectedAnswers = [];
+
+            $(this).find('.selected').each(function(){
+                selectedAnswers.push(
+                    parseInt($(this).attr('id').split('_')[3])
+                );
+            });
+
+            correctAnswers.sort(function(a,b){ return a-b; });
+            selectedAnswers.sort(function(a,b){ return a-b; });
+
+            var isCorrect =
+                correctAnswers.length === selectedAnswers.length &&
+                correctAnswers.every(function(val,index){
+                    return val === selectedAnswers[index];
+                });
+
+            resultArr[qIndx-1] = isCorrect ? 1 : 0;
+
+        }else{
+
+            var _cAns = getIntArray(fDataObj.answer);
             var tmpRes = [];
-            
+
             $(this).find('.pick_set').each(function(){
-                var setIndx = parseInt($(this).attr('id').split('_')[3]); 
+
+                var setIndx = parseInt($(this).attr('id').split('_')[3]);
                 tmpRes[setIndx-1] = 0;
-                var _setCorrAns = _cAns[setIndx - 1];  
+
+                var _setCorrAns = _cAns[setIndx-1];
                 var selectedPick = 0;
-                
+
                 if($(this).find('.selected').length > 0){
                     var tSel = $(this).find('.selected');
-                    selectedPick = parseInt(tSel.attr('id').split('_')[3]); 
+                    selectedPick = parseInt(tSel.attr('id').split('_')[3]);
                 }
-                console.log('pick_set >> ',$(this).attr('id'), _cAns, setIndx, _setCorrAns, selectedPick);
+
                 if(selectedPick == _setCorrAns){
                     tmpRes[setIndx-1] = 1;
                 }
+
             });
-           console.log('que >> ',qIndx, _cAns, $(this).find('.pick_set').length, tmpRes); 
-            resultArr[qIndx-1] = (((tmpRes.join('').split('0'))[0]).length == _cAns.length) ? 1: 0;
-			if(resultArr[qIndx-1] == 1){
-				if(fDataObj.audio !='' && fDataObj.audio !='no'){
-					if(fDataObj.audioenable == 'correct'){
-						if($(this).find('.audioIcon').length > 0){
-							$(this).find('.audioIcon').removeClass('disabled');
-						}
-					}
-				}
-			}
-			
+
+            resultArr[qIndx-1] =
+                (((tmpRes.join('').split('0'))[0]).length == _cAns.length) ? 1 : 0;
+        }
+
+        if(resultArr[qIndx-1] == 1){
+            if(fDataObj.audio != '' && fDataObj.audio != 'no'){
+                if(fDataObj.audioenable == 'correct'){
+                    if($(this).find('.audioIcon').length > 0){
+                        $(this).find('.audioIcon').removeClass('disabled');
+                    }
+                }
+            }
+        }
+
+    });
+
+    allCorrect =
+        resultArr.length == numOfQs &&
+        resultArr.every(function(v){
+            return v == 1;
         });
 
-      
-             
-        allCorrect = (((resultArr.join('').split('0'))[0]).length == numOfQs); 
-        self.showIcons(true, resultArr, allCorrect); 
-        showFeedback(true,allCorrect);
-       
-        if(allCorrect){
-            document.getElementsByClassName('resetBtn')[0].classList.add("disabled"); 
-        }        
-    },
+    self.showIcons(true, resultArr, allCorrect);
+    showFeedback(true, allCorrect);
+
+    if(allCorrect){
+        document.getElementsByClassName('resetBtn')[0].classList.add("disabled");
+    }
+},
     showIcons:function(aBoo, aVal, aResult){
         var ob = this.ob;        
         var e = (ob.activity_area);

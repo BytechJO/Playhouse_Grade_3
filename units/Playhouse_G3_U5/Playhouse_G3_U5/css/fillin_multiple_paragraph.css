@@ -48,7 +48,7 @@
   position: relative;
   min-height: 50px;
   font-size: 24px;
-  z-index: 10000;
+  /* z-index: 10000; */
 }
 
 .fillin_set * {

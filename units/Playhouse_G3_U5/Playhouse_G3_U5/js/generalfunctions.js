@@ -50,16 +50,21 @@ function getThisFileName(aPath) {
     return retFileName;
 }
 function getStrArray(str, pos) {
-    var arr = [];
-    var arrIndx = 0;
-    if (str != null) {
-        str = ((str).toString()).split(',');
-        for (var i = 0; i < str.length; i++) {
-            arr[arrIndx] = $.trim(str[i]);
-            arrIndx++;
-        }
+    if (Array.isArray(str)) {
+        return str.map(function(item) {
+            return $.trim(item);
+        });
     }
-    return arr;
+
+    if (str == null) {
+        return [];
+    }
+
+    return String(str)
+        .split(',')
+        .map(function(item) {
+            return $.trim(item);
+        });
 }
 function getIntArray(arr) {
     var arr1 = [];

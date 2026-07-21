@@ -88,6 +88,15 @@ var _activityData = {
          'layout'             : 3,
          'visited'            : 0,
       },
+       {
+         'file'               : 'readingcircle.html',
+         'type'               : 'readingcircle',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no
+         'activityCtrls'      : 'yes',
+         'layout'             : 3,
+         'visited'            : 0,
+      },
       {
          "file"               : "fillin_columns.html",
          'type'               : 'fillin',
@@ -128,9 +137,29 @@ var _activityData = {
       },
       //sentence_Building
       //fillin_circle_and_put_X  page_45
+       {
+         "file"               : "howmuchmany.html",
+         'type'               : 'howmuchmany',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
       {
          "file"               : "reading_with_fillin.html",
          'type'               : 'fillin',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 1,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+      {
+         "file"               : "dragingredients.html",
+         'type'               : 'dragingredients',
          'subtype'            : '',
          'build'              : 'yes', // yes (or) no   
          'activityCtrls'      : 'yes',

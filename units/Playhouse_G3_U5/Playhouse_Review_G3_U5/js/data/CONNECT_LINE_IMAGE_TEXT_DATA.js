@@ -95,56 +95,56 @@ var linedraw_data = {
             {
                 "text"          : "",
                 "image"         : "../images/pages/activities/Asset_7.png",
-                "answer"        : [6],
+                "answer"        : [2],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             },
             {
                 "text"          : "",
                 "image"         : "../images/pages/activities/Asset_8.png",
-                "answer"        : [1],
-                "audio"         : "",
-                "audioenable"   : "default", // correct (or) default
-            },
-            {
-                "text"          : "",
-                "image"         : "../images/pages/activities/Asset_9.png",
-                "answer"        : [4],
-                "audio"         : "",
-                "audioenable"   : "default", // correct (or) default
-            },
-            {
-                "text"          : "",
-                "image"         : "../images/pages/activities/Asset_10.png",
-                "answer"        : [7],
-                "audio"         : "",
-                "audioenable"   : "default", // correct (or) default
-            },
-            {
-                "text"          : "",
-                "image"         : "../images/pages/activities/Asset_11.png",
-                "answer"        : [3],
-                "audio"         : "",
-                "audioenable"   : "default", // correct (or) default
-            },
-            {
-                "text"          : "",
-                "image"         : "../images/pages/activities/Asset_12.png",
                 "answer"        : [8],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             },
             {
                 "text"          : "",
-                "image"         : "../images/pages/activities/Asset_13.png",
+                "image"         : "../images/pages/activities/Asset_9.png",
                 "answer"        : [5],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             },
             {
                 "text"          : "",
+                "image"         : "../images/pages/activities/Asset_10.png",
+                "answer"        : [3],
+                "audio"         : "",
+                "audioenable"   : "default", // correct (or) default
+            },
+            {
+                "text"          : "",
+                "image"         : "../images/pages/activities/Asset_11.png",
+                "answer"        : [7],
+                "audio"         : "",
+                "audioenable"   : "default", // correct (or) default
+            },
+            {
+                "text"          : "",
+                "image"         : "../images/pages/activities/Asset_12.png",
+                "answer"        : [1],
+                "audio"         : "",
+                "audioenable"   : "default", // correct (or) default
+            },
+            {
+                "text"          : "",
+                "image"         : "../images/pages/activities/Asset_13.png",
+                "answer"        : [4],
+                "audio"         : "",
+                "audioenable"   : "default", // correct (or) default
+            },
+            {
+                "text"          : "",
                 "image"         : "../images/pages/activities/Asset_14.png",
-                "answer"        : [2],
+                "answer"        : [6],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             }
