@@ -111,7 +111,7 @@ var fillin_data = {
     "numinrow": [[1], [1], [1], [1], [1]],
     "activityheading": '1 Complete the words.',
     "activityheading_audio" : "../audios/page_7/1_Complete_the_words.mp3",
-    "main_activityheading":"../images/pages/sentbuild_main_title.png",
+    "main_activityheading":"../images/pages/phonics-sent-build.png",
     "main_activityheading_audio" : "../audios/page_7/PHONICS_and_Sentence_Building.mp3",
     "activitysubheading": "",
     "activityicon": "../images/icons/key_icon.png",

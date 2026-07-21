@@ -230,7 +230,13 @@ function initiateActivityType(aActTyp, aActSubType) {
         theActivity = new DragAndDrop(quePart, dragndrop_data);
     } else if (aActTyp == 'coloring') {
         theActivity = new Coloring(quePart, coloring_data);
-    } else if (aActTyp == 'standAlone') {
+    }  else if (aActTyp == 'countablenouns') {
+        theActivity = new CountableNouns(quePart, countablenouns_data);
+    }  else if (aActTyp == 'fillcircletype') {
+        theActivity = new FillCircleType(quePart, fillcircle_data);
+    }  else if (aActTyp == 'punctuation') {
+        theActivity = new PunctuationMarks(quePart, punctuation_data);
+    }else if (aActTyp == 'standAlone') {
         theActivity = "standAlone";
 
     } else {

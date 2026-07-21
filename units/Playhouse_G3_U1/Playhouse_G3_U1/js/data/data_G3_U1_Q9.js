@@ -29,7 +29,7 @@ var fillin_data = {
     "activityheading_audio" : "../audios/page_7/2_Rewrite_each_sentence_with_the_correct_capitalisation.mp3",
     "activitysubheading": "",
     "activityicon": "../images/icons/key_icon.png",
-    "main_activityheading":"../images/pages/sentbuild_main_title.png",
+    "main_activityheading":"../images/pages/phonics-sent-build.png",
     "main_activityheading_audio" : "../audios/page_7/PHONICS_and_Sentence_Building.mp3",
     "image": "../images/pages/activities/ASP_3_SB_U14_P84_I1.png",
     "imageposition": "back",// "front" (or) "back"

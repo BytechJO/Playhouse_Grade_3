@@ -1,5 +1,5 @@
 var crossoutgrid_data = {
-  main_activityheading: "../images/pages/readwrite_main_title.png",
+  main_activityheading: "../images/pages/writing.jpg",
   main_activityheading_audio: "../audios/page_8/WRITING.mp3",
   mainTitleAudio: "../audios/under.mp3",
   subTitleTextLeft:

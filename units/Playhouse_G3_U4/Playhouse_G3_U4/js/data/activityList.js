@@ -22,15 +22,24 @@ var _activityData = {
          'layout'             : 3,
          'visited'            : 0,
       },
-      // {
-      //    "file"               : "multiple_choice_with_fillin.html",
-      //    "type"               : "mcq",
-      //    "build"              : "yes",
-      //    "activityCtrls"      : "yes",
-      //    "layout"             : 1,
-      //    "visited"            : 0,
-      //    "score"              : 0
-      // },
+      {
+         "file"               : "countablenouns.html",
+         "type"               : "countablenouns",
+         "build"              : "yes",
+         "activityCtrls"      : "yes",
+         "layout"             : 1,
+         "visited"            : 0,
+         "score"              : 0
+      },
+      {
+         "file"               : "index_fillcircletype.html",
+         "type"               : "fillcircletype",
+         "build"              : "yes",
+         "activityCtrls"      : "yes",
+         "layout"             : 1,
+         "visited"            : 0,
+         "score"              : 0
+      },
       {
          'file'               : 'Squer_puzzle.html',
          'type'               : 'wordsearch',            
@@ -45,6 +54,16 @@ var _activityData = {
          "type"               : "standAlone",
          'subtype'            : '',
          "build"              : "no",
+         "activityCtrls"      : "yes",
+         "layout"             : 1,
+         "visited"            : 0,
+         "score"              : 0
+      },
+        {
+         "file"               : "index_punctuation.html",
+         "type"               : "punctuation",
+         'subtype'            : '',
+         "build"              : "yes",
          "activityCtrls"      : "yes",
          "layout"             : 1,
          "visited"            : 0,

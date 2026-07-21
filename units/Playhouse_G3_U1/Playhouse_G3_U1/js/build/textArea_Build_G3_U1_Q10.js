@@ -8,14 +8,14 @@
             if (layOut == 4) {
                	// ============== ****  **** ==============
                 htmlStmt += '<div class="act_head_group justify-content-center">';
-                    htmlStmt += '<div class="audioIcon off contant " data-audio="' + aObj.main_activityheading_audio + '">';
+                    htmlStmt += '<div class="audioIcon off contant " data-audio="' + aObj.activityheading_audio + '">';
                         htmlStmt += '<div class="q-type-img-container">';
                         htmlStmt += '<img class="" src=' + aObj.main_activityheading + '>';
                         htmlStmt += '</div>';
                     htmlStmt += '</div>';
                 
                     htmlStmt += '<div class="activityHeading">'
-                        htmlStmt += '<div class="audioIcon off contant audioQuestionTitle" data-audio="' + aObj.activityheading_audio + '">';
+                        htmlStmt += '<div class="audioIcon off contant audioQuestionTitle" data-audio="' + aObj.main_activityheading_audio + '">';
                         htmlStmt += aObj.activityheading;
                         htmlStmt += '</div>';
                     htmlStmt += '</div>';
