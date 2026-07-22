@@ -62,7 +62,7 @@ function buildFillInBody(aObj) {
 					htmlStmt += '<div class="word_opt_sticky d-flex justify-content-center">';
 					htmlStmt += '<div class="word_options d-flex flex-wrap ">';
 					jQuery.each(aObj.text, function (key, value) {
-					htmlStmt += '<div class="audioIcon word off d-flex contant" data-audio="'+aObj.textAudios[key]+'">' ;
+					htmlStmt += '<div class="word off d-flex contant" data-audio="'+aObj.textAudios[key]+'">' ;
 						htmlStmt += '<div class="clue_word background_audio">' + value + '</div>';
 						htmlStmt += '</div>';
 					});

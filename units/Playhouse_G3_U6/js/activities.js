@@ -229,7 +229,18 @@ function initiateActivityType(aActTyp, aActSubType) {
         theActivity = new DragAndDrop(quePart, dragndrop_data);
     } else if (aActTyp == 'coloring') {
         theActivity = new Coloring(quePart, coloring_data);
-    } else if (aActTyp == 'standAlone') {
+    }else if (aActTyp == 'familyconnection') {
+        theActivity = new FamilyConnection(quePart, familyconnection_data);
+    } else if (aActTyp == 'wordsort3') {
+        theActivity = new WordSort3(quePart, wordsort3_data);
+    } else if (aActTyp == 'survey') {
+        theActivity = new Survey(quePart,survey_data);
+    } else if (aActTyp == 'listenandnumber') {
+        theActivity = new ListenAndNumber(quePart,listenandnumber_data);
+    }   else if (aActTyp == 'label') {
+        theActivity = new LabelActivity(quePart,label_data);
+    }
+     else if (aActTyp == 'standAlone') {
         theActivity = "standAlone";
 
     } else {

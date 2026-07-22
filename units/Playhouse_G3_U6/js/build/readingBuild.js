@@ -152,7 +152,7 @@ function buildReadingHTML(aObj) {
                 slideHtml += "<div class='d-flex justify-content-center align-items-center grid_columns_container " + slide.parentClassName + "'>";
                 slideHtml += "<div class='col_grid_container'>";
                     if(slide.mainImage){
-                        slideHtml += "<img src='" + slide.mainImage + "' style='height: 610px; margin-top:-30px;'/>";
+                        slideHtml += "<img src='" + slide.mainImage + "' style='height: 700px; margin-top:-30px;'/>";
                     }
 
                     if (slide.middleImage != undefined && slide.middleImage != '') {

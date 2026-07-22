@@ -23,7 +23,7 @@ var linedraw_data = {
     "mainTitle": "",
     "mainTitleIcon": "",
     "mainTitleAudio": "../audios/under.mp3",
-    "subTitleTextLeft"      : "<span class='orange_text'>1</span> Match.",
+    "subTitleTextLeft"      : "<span class='orange_text'>2</span> Match.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "",
@@ -81,7 +81,7 @@ var linedraw_data = {
             {
                 "text"          : "",
                 "image"         : "../images/pages/activities/Asset_28.png",
-                "answer"        : [5],
+                "answer"        : [3],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             },
@@ -95,28 +95,28 @@ var linedraw_data = {
             {
                 "text"          : "",
                 "image"         : "../images/pages/activities/Asset_30.png",
-                "answer"        : [1],
-                "audio"         : "",
-                "audioenable"   : "default", // correct (or) default
-            },
-            {
-                "text"          : "",
-                "image"         : "../images/pages/activities/Asset_31.png",
                 "answer"        : [6],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             },
             {
                 "text"          : "",
+                "image"         : "../images/pages/activities/Asset_31.png",
+                "answer"        : [5],
+                "audio"         : "",
+                "audioenable"   : "default", // correct (or) default
+            },
+            {
+                "text"          : "",
                 "image"         : "../images/pages/activities/Asset_32.png",
-                "answer"        : [4],
+                "answer"        : [1],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             },
             {
                 "text"          : "",
                 "image"         : "../images/pages/activities/Asset_33.png",
-                "answer"        : [3],
+                "answer"        : [4],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             }

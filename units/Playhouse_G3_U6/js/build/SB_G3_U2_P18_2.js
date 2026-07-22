@@ -50,14 +50,14 @@ function buildFillInBody(aObj) {
 			htmlStmt += '<div class="area d-flex flex-wrap">';
 
 				htmlStmt += '<div class="textarea-container">';
-					htmlStmt += '<div class="heading d-flex flex-wrap">';
-                        htmlStmt += '<div class="audioIcon off contant" data-audio="'+aObj.textAudio+'">' ;
-                            htmlStmt += '<div class="text">' + aObj.text + '</div>';
-                        htmlStmt += '</div>';
-                        if(aObj.image != undefined && aObj.image != ""){
-                            htmlStmt += '<img class="writing-img" src="' + aObj.image + '">';
-                        }
-                    htmlStmt += '</div>';
+					// htmlStmt += '<div class="heading d-flex flex-wrap">';
+                    //     htmlStmt += '<div class="audioIcon off contant" data-audio="'+aObj.textAudio+'">' ;
+                    //         htmlStmt += '<div class="text">' + aObj.text + '</div>';
+                    //     htmlStmt += '</div>';
+                    //     if(aObj.image != undefined && aObj.image != ""){
+                    //         htmlStmt += '<img class="writing-img" src="' + aObj.image + '">';
+                    //     }
+                    // htmlStmt += '</div>';
 					htmlStmt += '<textarea id="paper-textarea" rows="10" cols="50" maxlength="400"></textarea>';
 				htmlStmt += '</div>';
 			htmlStmt += '</div>';

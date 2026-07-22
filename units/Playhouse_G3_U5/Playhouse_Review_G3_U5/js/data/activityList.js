@@ -12,6 +12,15 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
+       {
+         'file'               : 'ticksentence.html',
+         'type'               : 'ticksentence',            
+         'build'              : 'yes', // yes (or) no
+         'activityCtrls'      : 'yes',
+         'layout'             : 1,
+         'visited'            : 0,
+         'score'              : 0,
+      },
       {
          "file"               : "fillin_text_in_sentences_under_ques.html",
          'type'               : 'fillin',

@@ -24,7 +24,7 @@ var fillin_data = {
     "mainTitle"             : "../images/icons/writing.png",
     "mainTitleIcon"         : "../images/pages/sb-icons/adv_icon_1.png",
     "mainTitleIconPos"      : {"right": "90px"},
-    "mainTitleAudio"        : "../audios/under.mp3",
+    "mainTitleAudio"        : "../audios/new/WRITING.mp3",
     "subTitleTextLeft"      : "<span class='orange_text'>2</span> Write.",
     "subTitleTextRight"     : "<span class='orange_text'>Write about a food tradition in your country or family.</span>",
     "subTitleIcons"         : ["../images/pages/sb-icons/gram_2_icon.png"],

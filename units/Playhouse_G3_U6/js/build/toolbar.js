@@ -8,19 +8,21 @@ function  buildToolbar(){
       //     cStmt += '<div id="tool-screenshot" class="button"><i class="fa fa-camera-retro" aria-hidden="true"></i></div>'
       // cStmt += '</div>'
       cStmt += '<div class="section drawing tools-section">'
+        cStmt += '<div id="tool-close" class="button" onclick="closeToolbar()"><i class="fa fa-times" aria-hidden="true"></i></div>'
+
         cStmt += '<div id="tool-rainbow" class="button rbw"><i class="fa fa-magic" aria-hidden="true"></i></div>'
-        cStmt += '<div id="tool-pen" class="button active"><i class="fa fa-pencil" aria-hidden="true"></i></div>'
+        cStmt += '<div id="tool-pen" class="button active"><i class="fa fa-pencil-alt" aria-hidden="true"></i></div>'
         cStmt += '<div id="tool-highlighter" class="button"><i class="fa fa-paint-brush" aria-hidden="true"></i></div>'
-        cStmt += '<div id="tool-mandala" class="button mandala"><i class="fa fa-snowflake-o" aria-hidden="true"></i></div>'
+        cStmt += '<div id="tool-mandala" class="button mandala"><i class="fa fa-snowflake" aria-hidden="true"></i></div>'
         // cStmt += '</div>'
         // cStmt += '<div class="section drawing">'
-        cStmt += '<div id="tool-line" class="button line">╱</div>'
-        cStmt += '<div id="tool-rectangle" class="button rect"><i class="fa fa-square-o" aria-hidden="true"></i></div>'
-        cStmt += '<div id="tool-circle" class="button circ"><i class="fa fa-circle-thin" aria-hidden="true"></i></div>'
-        cStmt += '<div id="tool-type" class="button font"><i class="fa fa-font" aria-hidden="true"></i></div>'
+        cStmt += '<div id="tool-line" class="button">╱</div>'
+        cStmt += '<div id="tool-rectangle" class="button rect"><i class="far fa-square" aria-hidden="true"></i></div>'
+        cStmt += '<div id="tool-circle" class="button circ"><i class="far fa-circle" aria-hidden="true"></i></div>'
+        // cStmt += '<div id="tool-type" class="button font"><i class="fa fa-font" aria-hidden="true"></i></div>'
         cStmt += '<div class="section rubber">'
           cStmt += '<div id="tool-eraser" class="button"><i class="fa fa-eraser" aria-hidden="true"></i></div>'
-          cStmt += '<div id="tool-cutout" class="button"><i class="fa fa-scissors" aria-hidden="true"></i></div>'
+          cStmt += '<div id="tool-cutout" class="button"><i class="fas fa-cut" aria-hidden="true"></i></div>'
         cStmt += '</div>'
         // cStmt += '<div class="section special">'
         //     cStmt += '<div id="tool-rotate-viewport" class="button rotate-viewport"><i class="fa fa-circle-o-notch" aria-hidden="true"></i></div>'
@@ -60,7 +62,13 @@ function  buildToolbar(){
       $('body').append(ccStmt)
       show_slide();
       moveToolbar();
+      closeToolbar();
 };
+
+function closeToolbar() {
+  $("#movableBox").fadeOut();
+  $("#sketchpad").fadeOut();
+}
 
 function show_slide(){
   $(".toolbarToggleBtn").click(

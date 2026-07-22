@@ -32,9 +32,28 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
+        {
+         "file"               : "index_familyconnection.html",
+         'type'               : 'familyconnection',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
       {
          'file'               : 'slide_7.html',
          'type'               : 'standAlone',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no
+         'activityCtrls'      : 'yes',
+         'layout'             : 3,
+         'visited'            : 0,
+      },
+       {
+         'file'               : 'index_wordsort3.html',
+         'type'               : 'wordsort3',
          'subtype'            : '',
          'build'              : 'yes', // yes (or) no
          'activityCtrls'      : 'yes',
@@ -45,6 +64,26 @@ var _activityData = {
       {
          "file"               : "fillin_text.html",
          'type'               : 'fillin',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+      {
+         "file"               : "index_survey.html",
+         'type'               : 'survey',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+       {
+         "file"               : "index_listenandnumber.html",
+         'type'               : 'listenandnumber',
          'subtype'            : '',
          'build'              : 'yes', // yes (or) no   
          'activityCtrls'      : 'yes',
@@ -67,6 +106,15 @@ var _activityData = {
       {
          'file'               : 'slide_reading.html',
          'type'               : 'standAlone',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no
+         'activityCtrls'      : 'yes',
+         'layout'             : 3,
+         'visited'            : 0,
+      },
+      {
+         'file'               : 'label.html',
+         'type'               : 'label',
          'subtype'            : '',
          'build'              : 'yes', // yes (or) no
          'activityCtrls'      : 'yes',

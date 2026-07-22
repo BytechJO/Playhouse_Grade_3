@@ -22,16 +22,25 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      // {
-      //    "file"               : "fillin_text_in_sentences_under_ques.html",
-      //    'type'               : 'fillin',
-      //    'subtype'            : '',
-      //    'build'              : 'yes', // yes (or) no   
-      //    'activityCtrls'      : 'yes',
-      //    'layout'             : 2,
-      //    'visited'            : 0,
-      //    'score'              : 0,
-      // },
+      {
+         "file"               : "index_wordsort3.html",
+         'type'               : 'wordsort3',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+       {
+         "file"               : "countablenouns.html",
+         "type"               : "countablenouns",
+         "build"              : "yes",
+         "activityCtrls"      : "yes",
+         "layout"             : 1,
+         "visited"            : 0,
+         "score"              : 0
+      },
       // {
       //    'file'               : 'circle_word_in_sentence_img.html',
       //    'type'               : 'mcq',

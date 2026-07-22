@@ -40,13 +40,13 @@ var reading_data = {
                 "When they get there, Ben likes to choose his own groceries. What do Ben and his family pick? Ben picks a box of "+
                 "cereal, a packet of biscuits, three litres of juice and 400 grams of cheese. Mum picks two cartons of milk," +
                 "one tube of toothpaste, one box of washing powder, two bars of soap and a carton of eggs. Dad picks two loaves" +
-                "of bread, one kilogram of rice, five kilograms of vegetables and fruit, three kilograms of sugar and a kilogram" ,
+                "of bread, one kilogram of rice, five kilograms of vegetables and fruit, three kilograms of sugar and a kilogram" +
                 "of chicken. Greg’s sister, Layla, picks a bar of chocolate. When they finish shopping, they go home and cook a big" +
-                "dinner!",
+                "dinner!"
                ],
             "imagePlacePos":[
-                {"colWidth": [6,6], "colData": [1,1] },
-                {"colWidth": [6,6], "colData": [0,0] },
+                {"colWidth": [6,6], "colData": [1] },
+                // {"colWidth": [6,6], "colData": [0,0] },
 
             ]
         },

@@ -24,11 +24,11 @@ var fillin_data = {
   "mainTitle"             : "../images/icons/writing.png",
   "mainTitleIcon"         : "../images/pages/sb-icons/phonics_3_icon.png",
   "mainTitleIconPos"      : {"right": "90px"},
-  "mainTitleAudio"        : "../audios/under.mp3",
+  "mainTitleAudio"        : "../audios/new/WRITING.mp3",
   "subTitleTextLeft"      : "<span class='orange_text'>1</span> <b>Read</b>",
   "subTitleTextRight"     : "",
   "subTitleIcons"         : ["../images/pages/sb-icons/phonics_3_icon.png"],
-  "subTitleAudio"         : "../audios/under.mp3",
+  "subTitleAudio"         : "../audios/new/1_Read.mp3",
   "image"                 : "../images/pages/activities/p18_1.png",
   "imageposition"         : "back",// "front" (or) "back"
   "numbering"             : "alphabet", // "alphabet" (or) "number"

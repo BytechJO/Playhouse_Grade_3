@@ -30,12 +30,12 @@ function buildSnapShotContent(snapshotObj, snapshotPopup_data, Popups_data) {
 					slideHtml +=  '</div>'
 				slideHtml +=  '</div>'
 			}
-			
+
 			$(".snapshot_container").append(slideHtml);
 
 			listen_Popups_array = Popups_data["slides"][slide].listen["words"]
 			listen_Popups = "<div class='readHilightsPanel_container d-flex flex-wrap justify-content-around'>"
-				listen_Popups += "<div class='main_title audioIcon mx-0 mx-md-auto audioTile' data-audio='" + Popups_data["slides"][slide].listen["mainTitle_audio"] + "'data-onaudioplay='color:#e43b6d'>"
+				listen_Popups += "<div class='snap_card main_title audioIcon mx-0 mx-md-auto audioTile' data-audio='" + Popups_data["slides"][slide].listen["mainTitle_audio"] + "' style='position: absolute'>"
 					listen_Popups += "<img class='' src='" + Popups_data["slides"][slide].listen["mainTitle"] + "' />"
 				listen_Popups += "</div>";
 			listen_Popups += "<div class='title'>"
@@ -58,7 +58,7 @@ function buildSnapShotContent(snapshotObj, snapshotPopup_data, Popups_data) {
 
 			listen2_Popups_array = Popups_data["slides"][slide].listen2["image"]
 			listen2_Popups = "<div class='readHilightsPanel_container' >"
-				listen2_Popups += "<div class='main_title audioIcon mx-0 mx-md-auto audioTile' data-audio='" + Popups_data["slides"][slide].listen2["mainTitle_audio"] + "'data-onaudioplay='color:#e43b6d'>"
+				listen2_Popups += "<div class='snap_card main_title audioIcon mx-0 mx-md-auto audioTile' data-audio='" + Popups_data["slides"][slide].listen2["mainTitle_audio"] + "' style='position: absolute'>"
 					listen2_Popups += "<img class='' src='" + Popups_data["slides"][slide].listen2["mainTitle"] + "' />"
 				listen2_Popups += "</div>";
 			listen2_Popups += "<div class='title'>"
