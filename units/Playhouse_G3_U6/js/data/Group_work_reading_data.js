@@ -37,10 +37,10 @@ var fillin_data = {
   imageposition: "front",
   text: [
     "<div style='display: flex; flex-wrap: wrap; gap:25px;'>" +
-      "<div><p>head of garlic</p><img src=../images/pages/page-2/Capture1.png height='150px'/></div>" +
-      "<div><p>100 grams of spices</p><img src=../images/pages/page-2/Capture2.png height='150px'/></div>" +
-      "<div><p>arge piece of cheese</p><img src=../images/pages/page-2/Capture3.png height='150px'/></div>" +
-      "<div><p>two jars of jam</p><img src=../images/pages/page-2/Capture4.png height='150px'/></div>" +
+      "<div><p>head of garlic</p><img src=../images/pages/page-2/Capture1.PNG height='150px'/></div>" +
+      "<div><p>100 grams of spices</p><img src=../images/pages/page-2/Capture2.PNG height='150px'/></div>" +
+      "<div><p>arge piece of cheese</p><img src=../images/pages/page-2/Capture3.PNG height='150px'/></div>" +
+      "<div><p>two jars of jam</p><img src=../images/pages/page-2/Capture4.PNG height='150px'/></div>" +
       "</div>",
   ],
   textAudios: [],
