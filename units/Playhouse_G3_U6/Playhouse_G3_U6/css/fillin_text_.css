@@ -1,5 +1,5 @@
 .all_cont{
-    height: 100%;
+    /* height: 100%; */
     text-align: center;
     align-items: center;
     display: flex;
@@ -18,7 +18,17 @@
     justify-content: center;
     align-items: center;
 }
-
+.circleOpt{
+    cursor: pointer;
+    padding: 1px 6px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    display: inline-block;
+}
+.circleOpt.circled{
+    border-color: #e2574c;
+    border-radius: 50% / 60%;   /* شكل بيضاوي متل دائرة يد */
+}
 .activityHeading b {
     color: #000;
 }

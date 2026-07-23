@@ -22,7 +22,7 @@ var stereo_data = {
 var mcq_data = {    
     "layout"                : 1,
     "numinrow"              : [[1]],
-    "mainTitle": "../images/pages/sb-icons/sentbuild_main_title.png",
+    "mainTitle": "../images/pages/sb-icons/phonics-sent-build.png",
     "mainTitleIcon": "",
     "mainTitleIconPos": {"right": "-20px"},
     "mainTitleAudio": "../audios/page_32/PHONICS_and_Sentence_Building.mp3",

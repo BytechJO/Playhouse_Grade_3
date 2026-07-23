@@ -22,7 +22,7 @@ var stereo_data = {
 var fillin_data = {
     "layout"               : 1,
     "numinrow"              : [[1], [1], [1], [1], [1]],
-    "mainTitle"             : "../images/pages/sb-icons/sentbuild_main_title.png",
+    "mainTitle": "../images/pages/sb-icons/phonics-sent-build.png",
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/page_32/PHONICS_and_Sentence_Building.mp3",
@@ -40,7 +40,7 @@ var fillin_data = {
      [
         {
           "singleword": false,
-          "text": "(<span class='blue_text'>loaf</span>)[_]",
+          "text": "<span class='blue_text'>(loaf)[_]</span>",
           "textaudios": ["../audios/page_32/under.mp3"],
           "audio": "",
           "audioenable": "default", // correct (or) default
@@ -54,7 +54,7 @@ var fillin_data = {
         },
         {
           "singleword": false,
-          "text": "(<span class='blue_text'>goat</span>)[_]",
+          "text": "<span class='blue_text'>(goat)[_]</span>",
           "textaudios": ["../audios/page_32/under.mp3"],
           "audio": "",
           "audioenable": "default", // correct (or) default
@@ -68,7 +68,7 @@ var fillin_data = {
         },
         {
           "singleword": false,
-          "text": "(<span class='blue_text'>coat</span>)[_]",
+          "text": "<span class='blue_text'>(coat)[_]</span>",
           "textaudios": ["../audios/page_32/under.mp3"],
           "audio": "",
           "audioenable": "default", // correct (or) default
@@ -82,7 +82,7 @@ var fillin_data = {
         },
         {
           "singleword": false,
-          "text": "(<span class='blue_text'>road</span>)[_]",
+          "text": "<span class='blue_text'>(road)[_]</span>",
           "textaudios": ["../audios/page_32/under.mp3"],
           "audio": "",
           "audioenable": "default", // correct (or) default

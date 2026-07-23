@@ -618,6 +618,14 @@ function setLoadedStatus(val) {
                 buildWordSort3Body(wordsort3_data);
               }
               break;
+            case "wordplacement":
+              if (
+                typeof wordplacement_data != undefined &&
+                wordplacement_data != null
+              ) {
+                buildWordPlacementBody(wordplacement_data);
+              }
+              break;
             case "survey":
               if (typeof survey_data != undefined && survey_data != null) {
                 buildSurveyBody(survey_data);
@@ -631,12 +639,14 @@ function setLoadedStatus(val) {
                 buildListenAndNumberBody(listenandnumber_data);
               }
               break;
-              case "label":
-              if (
-                typeof label_data != undefined &&
-                label_data != null
-              ) {
+            case "label":
+              if (typeof label_data != undefined && label_data != null) {
                 buildLabelBody(label_data);
+              }
+              break;
+               case "quantityanswer":
+              if (typeof quantityanswer_data != undefined && quantityanswer_data != null) {
+                buildQuantityAnswerBody(quantityanswer_data);
               }
               break;
           }
@@ -673,7 +683,8 @@ function setLoadedStatus(val) {
           case "coloring":
           case "wordsort3":
           case "survey":
-               case "label":
+          case "wordplacement":
+          case "label":
           case "listenandnumber":
           case "familyconnection":
             callActivityFunctions(

@@ -150,15 +150,15 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      // {
-      //    'file'               : 'slide_Sentence_Building.html',
-      //    'type'               : 'standAlone',
-      //    'subtype'            : '',
-      //    'build'              : 'yes', // yes (or) no
-      //    'activityCtrls'      : 'yes',
-      //    'layout'             : 3,
-      //    'visited'            : 0,
-      // },
+      {
+         'file'               : 'wordplacement.html',
+         'type'               : 'wordplacement',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no
+         'activityCtrls'      : 'yes',
+         'layout'             : 3,
+         'visited'            : 0,
+      },
       //???
       {
          "file"               : "reading_with_fillin.html",
@@ -189,16 +189,16 @@ var _activityData = {
          'layout'             : 3,
          'visited'            : 0,
       },
-      // {
-      //    "file"               : "fillin_text_image_right.html",
-      //    'type'               : 'fillin',
-      //    'subtype'            : '',
-      //    'build'              : 'yes', // yes (or) no   
-      //    'activityCtrls'      : 'yes',
-      //    'layout'             : 2,
-      //    'visited'            : 0,
-      //    'score'              : 0,
-      // },
+      {
+         "file"               : "quantityanswer.html",
+         'type'               : 'quantityanswer',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
    
 
    ]

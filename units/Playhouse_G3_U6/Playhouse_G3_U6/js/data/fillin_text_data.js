@@ -42,6 +42,7 @@ var fillin_data = {
           "singleword": false,
           "text": "[_] <b>1</b> &nbsp; The olives are in a (slice / jar).",
           "textaudios": ["../audios/page_30/under.mp3"],
+          "correctCircleWord": "jar", 
           "audio": "",
           "audioenable": "default", // correct (or) default
           "image": "",
@@ -56,6 +57,7 @@ var fillin_data = {
           "singleword": false,
           "text": "[_] <b>2</b> &nbsp; She takes a (bottle / loaf) of water to school.",
           "textaudios": ["../audios/page_30/under.mp3","../audios/page_30/under.mp3"],
+          "correctCircleWord": "bottle", 
           "audio": "",
           "audioenable": "default", // correct (or) default
           "image": "",
@@ -70,6 +72,7 @@ var fillin_data = {
           "singleword": false,
           "text": "[_] <b>3</b> &nbsp; Lilly eats a (stick / bowl) of cereal for breakfast.",
           "textaudios": ["../audios/page_30/under.mp3","../audios/page_30/under.mp3"],
+          "correctCircleWord": "bowl", 
           "audio": "",
           "audioenable": "default", // correct (or) default
           "image": "",
@@ -84,6 +87,7 @@ var fillin_data = {
           "singleword": false,
           "text": "[_] <b>4</b> &nbsp; My brother always eats a (glass / slice) of pizza at the mall.",
           "textaudios": ["../audios/page_30/under.mp3","../audios/page_30/under.mp3"],
+          "correctCircleWord": "slice", 
           "audio": "",
           "audioenable": "default", // correct (or) default
           "image": "",
@@ -98,6 +102,7 @@ var fillin_data = {
           "singleword": false,
           "text": "[_] <b>5</b> &nbsp; Mom buys a (loaf / stick) of bread from the supermarket.",
           "textaudios": ["../audios/page_30/under.mp3","../audios/page_30/under.mp3"],
+          "correctCircleWord": "loaf", 
           "audio": "",
           "audioenable": "default", // correct (or) default
           "image": "",
@@ -111,7 +116,7 @@ var fillin_data = {
         {
           "singleword": false,
           "text": "[_] <b>6</b> &nbsp; I have a (jar / bar) of chocolate in my lunch.",
-          "textaudios": ["../audios/page_30/under.mp3","../audios/page_30/under.mp3"],
+          "textaudios": ["../audios/page_30/under.mp3","../audios/page_30/under.mp3"],"correctCircleWord": "bar", 
           "audio": "",
           "audioenable": "default", // correct (or) default
           "image": "",
@@ -125,6 +130,7 @@ var fillin_data = {
         {
           "singleword": false,
           "text": "[_] <b>7</b> &nbsp; We need to buy a (head / litre) of milk today.",
+          "correctCircleWord": "litre", 
           "textaudios": ["../audios/page_30/under.mp3","../audios/page_30/under.mp3"],
           "audio": "",
           "audioenable": "default", // correct (or) default
@@ -139,6 +145,7 @@ var fillin_data = {
         {
           "singleword": false,
           "text": "[_] <b>8</b> &nbsp; Dad put a (slice / teaspoon) of sugar in his cup of tea.",
+          "correctCircleWord": "teaspoon", 
           "textaudios": ["../audios/page_30/under.mp3","../audios/page_30/under.mp3"],
           "audio": "",
           "audioenable": "default", // correct (or) default
@@ -153,6 +160,7 @@ var fillin_data = {
         {
           "singleword": false,
           "text": "[_] <b>9</b> &nbsp; We put a (cup / carton) of flour in the cake.",
+          "correctCircleWord": "cup", 
           "textaudios": ["../audios/page_30/under.mp3","../audios/page_30/under.mp3"],
           "audio": "",
           "audioenable": "default", // correct (or) default
@@ -167,6 +175,7 @@ var fillin_data = {
         {
           "singleword": false,
           "text": "[_] <b>10</b> &nbsp; He drinks a (stick / glass) of juice for breakfast.",
+          "correctCircleWord": "glass", 
           "textaudios": ["../audios/page_30/under.mp3","../audios/page_30/under.mp3"],
           "audio": "",
           "audioenable": "default", // correct (or) default

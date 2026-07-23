@@ -237,7 +237,11 @@ function initiateActivityType(aActTyp, aActSubType) {
         theActivity = new Survey(quePart,survey_data);
     } else if (aActTyp == 'listenandnumber') {
         theActivity = new ListenAndNumber(quePart,listenandnumber_data);
-    }   else if (aActTyp == 'label') {
+    }else if (aActTyp == 'wordplacement') {
+        theActivity = new WordPlacement(quePart,wordplacement_data);
+    } else if (aActTyp == 'quantityanswer') {
+        theActivity = new QuantityAnswer(quePart,quantityanswer_data);
+    }    else if (aActTyp == 'label') {
         theActivity = new LabelActivity(quePart,label_data);
     }
      else if (aActTyp == 'standAlone') {

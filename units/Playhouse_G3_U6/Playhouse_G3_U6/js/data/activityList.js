@@ -12,15 +12,15 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      {
-         'file'               : 'multiple_choice_p29_2.html',
-         'type'               : 'mcq',
-         'build'              : 'yes', // yes (or) no
-         'activityCtrls'      : 'yes',
-         'layout'             : 1,
-         'visited'            : 0,
-         'score'              : 0,
-      },
+      // {
+      //    'file'               : 'multiple_choice_p29_2.html',
+      //    'type'               : 'mcq',
+      //    'build'              : 'yes', // yes (or) no
+      //    'activityCtrls'      : 'yes',
+      //    'layout'             : 1,
+      //    'visited'            : 0,
+      //    'score'              : 0,
+      // },
       {
          'file'               : 'slide_4.html',
          'type'               : 'standAlone',
@@ -50,6 +50,26 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
+       {
+         "file"               : "index_circlewords.html",
+         'type'               : 'circlewords',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+         {
+         "file"               : "index_wordsort3.html",
+         'type'               : 'wordsort3',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
       //read grid like g6 slide 9
       //fillin table
       {
@@ -64,6 +84,16 @@ var _activityData = {
       {
          "file"               : "fillin_text_3.html",
          'type'               : 'fillin',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+        {
+         "file"               : "wordplacement.html",
+         'type'               : 'wordplacement',
          'subtype'            : '',
          'build'              : 'yes', // yes (or) no   
          'activityCtrls'      : 'yes',

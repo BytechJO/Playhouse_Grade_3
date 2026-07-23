@@ -230,7 +230,13 @@ function initiateActivityType(aActTyp, aActSubType) {
         theActivity = new DragAndDrop(quePart, dragndrop_data);
     } else if (aActTyp == 'coloring') {
         theActivity = new Coloring(quePart, coloring_data);
-    } else if (aActTyp == 'standAlone') {
+    } else if (aActTyp == 'circlewords') {
+        theActivity = new CircleWords(quePart, circlewords_data);
+    }  else if (aActTyp == 'wordsort3') {
+        theActivity = new WordSort3(quePart, wordsort3_data);
+    }else if (aActTyp == 'wordplacement') {
+        theActivity = new WordPlacement(quePart,wordplacement_data);
+    }else if (aActTyp == 'standAlone') {
         theActivity = "standAlone";
 
     } else {
