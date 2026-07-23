@@ -234,6 +234,8 @@ function initiateActivityType(aActTyp, aActSubType) {
         theActivity = new CountableNouns(quePart, countablenouns_data);
     }  else if (aActTyp == 'wordsort3') {
         theActivity = new WordSort3(quePart, wordsort3_data);
+    } else if (aActTyp == 'readcolourpoem') {
+        theActivity = new ReadColourPoem(quePart, readcolourpoem_data);
     }else if (aActTyp == 'standAlone') {
         theActivity = "standAlone";
 

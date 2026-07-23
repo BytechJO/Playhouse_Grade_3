@@ -593,7 +593,7 @@ function setLoadedStatus(val) {
                 buildLetterPathBody(letterpath_data);
               }
               break;
-                  case "countablenouns":
+            case "countablenouns":
               if (
                 typeof countablenouns_data != undefined &&
                 countablenouns_data != null
@@ -607,6 +607,14 @@ function setLoadedStatus(val) {
                 wordsort3_data != null
               ) {
                 buildWordSort3Body(wordsort3_data);
+              }
+              break;
+            case "readcolourpoem":
+              if (
+                typeof readcolourpoem_data != undefined &&
+                readcolourpoem_data != null
+              ) {
+                buildReadColourPoemBody(readcolourpoem_data);
               }
               break;
           }
@@ -633,7 +641,8 @@ function setLoadedStatus(val) {
           case "linedraw":
           case "dragndrop":
           case "wordsort3":
-              case "countablenouns":
+          case "readcolourpoem":
+          case "countablenouns":
           case "coloring":
             callActivityFunctions(
               _activityData,

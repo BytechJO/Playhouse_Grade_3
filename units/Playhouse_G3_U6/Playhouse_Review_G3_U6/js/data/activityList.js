@@ -41,6 +41,15 @@ var _activityData = {
          "visited"            : 0,
          "score"              : 0
       },
+         {
+         "file"               : "readcolourpoem.html",
+         "type"               : "readcolourpoem",
+         "build"              : "yes",
+         "activityCtrls"      : "yes",
+         "layout"             : 1,
+         "visited"            : 0,
+         "score"              : 0
+      },
       // {
       //    'file'               : 'circle_word_in_sentence_img.html',
       //    'type'               : 'mcq',
