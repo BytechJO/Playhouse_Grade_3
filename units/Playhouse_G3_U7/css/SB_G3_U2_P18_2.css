@@ -18,7 +18,7 @@
 }
 
 .area{
-    background-image: url('../images/pages/activities/writing-background.png');
+    background-image: url('../images/pages/page-5/background_img_with_edites.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 530px;
@@ -44,7 +44,7 @@
     height: 390px;
     /* padding: 0px 12px; */
     line-height: 41px;
-    padding: 91px 70px 0px;
+    padding: 52px 42px 0px;
     font-size: 24.8px;
     overflow: hidden;
 }

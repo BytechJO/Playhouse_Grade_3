@@ -25,7 +25,7 @@ var mcq_data = {
     "mainTitleIcon"         : "../images/pages/sb-icons/gram_main_title_icon.png",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/page_62/GRAMMAR.mp3",
-    "subTitleTextLeft"      : "<span class='orange_text'>2</span> Listen and read.",
+    "subTitleTextLeft"      : "<span class='orange_text'>2</span> Listen and read.  <span class='orange_text'>Then circle the adjectives.</span>",
     "subTitleTextRight"     : "Then circle the adjectives.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
@@ -41,7 +41,7 @@ var mcq_data = {
         {
             "question"              : "",
             "image"                 : "",
-            "answer"                : [5,6,9,14,21,24,39,45],
+            "answer"                : [5,6,9,14,21,24,39,43,45],
             "audio"                 : "no",
             "audioenable"           : "default", // correct (or) default
             "options"               : [

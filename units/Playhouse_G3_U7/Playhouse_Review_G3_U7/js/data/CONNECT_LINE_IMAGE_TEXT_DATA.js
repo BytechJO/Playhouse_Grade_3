@@ -95,7 +95,7 @@ var linedraw_data = {
             {
                 "text"          : "",
                 "image"         : "../images/pages/activities/Asset_3.png",
-                "answer"        : [5],
+                "answer"        : [6],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             },
@@ -109,14 +109,14 @@ var linedraw_data = {
             {
                 "text"          : "",
                 "image"         : "../images/pages/activities/Asset_5.png",
-                "answer"        : [6],
+                "answer"        : [3],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             },
             {
                 "text"          : "",
                 "image"         : "../images/pages/activities/Asset_6.png",
-                "answer"        : [3],
+                "answer"        : [5],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             }

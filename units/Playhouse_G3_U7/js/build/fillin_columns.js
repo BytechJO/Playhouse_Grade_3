@@ -111,6 +111,8 @@ function buildFillInBody(aObj) {
 			}
 			htmlStmt += '</div>';
 		}
+		htmlStmt += '<img src='+aObj.imgInSide +' style="height:270px"/>';
+
 		htmlStmt += '</div>';
 		htmlStmt += '</div></div></div>'; // end - all_cont / options 
 		

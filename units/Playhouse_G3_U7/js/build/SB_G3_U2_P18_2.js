@@ -52,8 +52,8 @@ function buildFillInBody(aObj) {
 				htmlStmt += '<div class="textarea-container">';
 					htmlStmt += '<div class="heading d-flex flex-wrap">';
                         htmlStmt += '<div class="audioIcon off contant" data-audio="'+aObj.textAudio+'">' ;
-                            htmlStmt += '<div class="text">' + aObj.text + '</div>';
-                        htmlStmt += '</div>';
+                            // htmlStmt += '<div class="text">' + aObj.text + '</div>';
+                        // htmlStmt += '</div>';
                         if(aObj.image != undefined && aObj.image != ""){
                             htmlStmt += '<img class="writing-img" src="' + aObj.image + '">';
                         }
