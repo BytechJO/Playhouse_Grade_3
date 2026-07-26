@@ -38,7 +38,7 @@ var fillin_data = {
             "audio": "../audios/page_35/under.mp3",
             "audioenable": "default", // correct (or) default
             "image": "../images/pages/activities/2-img-1.png",
-            "answer": ["This is a two-storey house. It is big.It has"],
+            "answer": ["This is a two-storey house. It is big.It has a nice garden"],
             "strictcase": "no", // yes (or) no              
             "type": "text", // text (or) number
         },

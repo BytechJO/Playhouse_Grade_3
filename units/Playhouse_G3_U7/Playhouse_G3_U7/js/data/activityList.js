@@ -32,6 +32,16 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
+         {
+         "file"               : "dialoguecircle.html",
+         'type'               : 'dialoguecircle',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
       // {
       //    'file'               : 'slide_1.html',
       //    'type'               : 'standAlone',
@@ -44,6 +54,16 @@ var _activityData = {
       {
          "file"               : "fillin_columns_2.html",
          'type'               : 'fillin',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+       {
+         "file"               : "crackcode.html",
+         'type'               : 'crackcode',
          'subtype'            : '',
          'build'              : 'yes', // yes (or) no   
          'activityCtrls'      : 'yes',

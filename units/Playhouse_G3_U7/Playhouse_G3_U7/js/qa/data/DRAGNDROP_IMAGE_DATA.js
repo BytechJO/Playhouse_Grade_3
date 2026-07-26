@@ -52,7 +52,7 @@ var _activity_json =
           
             // "<div class='i_container'><div class='i_row'><div class='l_col'><img src='../images/pages/page4-6.PNG' class='qus_img'></div><div class='r_col'><div class='droppable_text_div'>&nbsp;___&nbsp;</div></div></div></div>",
         ],
-        "options": ["apartment building", "tent", "castle", "mobile home", "farm", "villa"],
+        "options": ["apartment building","mobile home",  "tent","farm", "castle",  "villa"],
         "answers": ["castle", "apartment building", "tent", "farm", "villa", "mobile home"],
         // "default_answer": {1:""}
     };

@@ -517,6 +517,16 @@ function setLoadedStatus(val) {
                                 buildLetterPathBody(letterpath_data);
                             }
                             break;
+                            case 'dialoguecircle':
+                            if (typeof dialoguecircle_data != undefined && dialoguecircle_data != null) {
+                                buildDialogueCircleBody(dialoguecircle_data);
+                            }
+                            break;
+                            case 'crackcode':
+                            if (typeof crackcode_data != undefined && crackcode_data != null) {
+                                buildCrackCodeBody(crackcode_data);
+                            }
+                            break;
                     }
                 } else {
                     // console.log('no build');
@@ -550,6 +560,8 @@ function setLoadedStatus(val) {
                     case 'linedraw':
                     case 'dragndrop':
                     case 'coloring':
+                            case 'crackcode':
+
                         callActivityFunctions(_activityData, _actIndx, _fileType, _fileSubType);
                         break;
                     default:

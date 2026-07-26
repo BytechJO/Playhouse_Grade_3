@@ -113,8 +113,8 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    right: 240px;
-    top: 300px;
+      right: 8%;
+    top: 53%;
 }
 
 .img_space img {
