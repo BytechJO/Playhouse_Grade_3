@@ -22,7 +22,7 @@ var _data = {
         'link'      : 'index.html'
        }, 
        
-       "audio": "./audios/ARC_2_1_SB_U1_TitleAudio.mp3",
+       "audio": "./audios/page_68/UNIT_8_Its_in_the_Kitchen.mp3",
        "title":{
            "text": "It’s in the Kitchen",
            "color":"rgb(255, 255, 255);",
@@ -33,7 +33,7 @@ var _data = {
            "width": "60vw",
        },
        "readingPageOne":{
-           "audio":"./audios/ARC_2_1_SB_U1_TitleAudio.mp3"           
+           "audio":"./audios/page_68/UNIT_8_Its_in_the_Kitchen.mp3"           
        }
     },
     "body":{

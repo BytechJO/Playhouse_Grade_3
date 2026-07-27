@@ -31,10 +31,7 @@
 
 .black_text {
     color: #000;
-}
-
-.blue_text {
-    color: #00aeef;
+    font-weight: lighter;
 }
 
 
@@ -120,7 +117,7 @@
 /**************** Scrollbar ***************/
 
 ::-webkit-scrollbar {
-    width: 15px;
+    /* width: 15px; */
 }
 
 ::-webkit-scrollbar-track {

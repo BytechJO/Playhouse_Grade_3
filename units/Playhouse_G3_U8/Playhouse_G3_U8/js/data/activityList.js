@@ -31,6 +31,24 @@ var _activityData = {
          'layout'             : 3,
          'visited'            : 0,
       },
+      {
+         'file'               : 'storycircleunderline.html',
+         'type'               : 'storycircleunderline',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no
+         'activityCtrls'      : 'yes',
+         'layout'             : 3,
+         'visited'            : 0,
+      },
+        {
+         'file'               : 'match_img_horizantal.html',
+         'type'               : 'linedraw',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no
+         'activityCtrls'      : 'yes',
+         'layout'             : 3,
+         'visited'            : 0,
+      },
       //circle_with_underline
       //multi match
       {
@@ -71,18 +89,28 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      // {
-      //    "file"               : "multiple_text_with_fillin.html",
-      //    "type"               : "mcq",
-      //    "build"              : "yes",
-      //    "activityCtrls"      : "yes",
-      //    "layout"             : 1,
-      //    "visited"            : 0,
-      //    "score"              : 0
-      // },
+      {
+         "file"               : "circleimageword.html",
+         "type"               : "circleimageword",
+         "build"              : "yes",
+         "activityCtrls"      : "yes",
+         "layout"             : 1,
+         "visited"            : 0,
+         "score"              : 0
+      },
       {
          "file"               : "fillin_text_3.html",
          'type'               : 'fillin',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+      {
+         "file"               : "storywrite.html",
+         'type'               : 'storywrite',
          'subtype'            : '',
          'build'              : 'yes', // yes (or) no   
          'activityCtrls'      : 'yes',

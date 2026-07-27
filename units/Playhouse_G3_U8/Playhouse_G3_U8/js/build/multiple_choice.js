@@ -51,7 +51,7 @@ function buildMcqBody(aObj) {
         }
        
 		for(x= 0;x<numberofCols;x++){	
-			htmlStmt += '<div class="tick_group d-flex flex-wrap">';			
+			htmlStmt += '<div class="tick_group">';			
 			for(y= 0;y<numOfQinCol;y++){
 				currQueNum++;
 				var tpOb = (aObj.questions)[currQueNum -1];

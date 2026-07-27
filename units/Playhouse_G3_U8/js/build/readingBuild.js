@@ -23,10 +23,12 @@ function buildReadingHTML(aObj) {
                 for (var sicons = 0 ; sicons < aObj.subTitleIcons.length ; sicons++) {
                     slideHtml += "<img src='" + aObj.subTitleIcons[sicons] + "'/>";
                 }
-                slideHtml += "<br><p class='subTitleTextRight'>" + aObj.subTitleTextRight + " </p>";
-            slideHtml += "</div>";
-            slideHtml += '</div>';
-        slideHtml += '</div>';
+                slideHtml += "</div>";
+                slideHtml += '</div>';
+                slideHtml += '<div class="audioIcon off contant audioQuestionTitle" data-slideNum="' + 1 + '" data-audio="' + aObj.subTitleTextRightAudio + '">';
+                slideHtml += "<br><p class='subTitleTextRight' >" + aObj.subTitleTextRight + " </p>";
+                slideHtml += '</div>';
+                slideHtml += '</div>';
     slideHtml += '</div>';
 
     slideHtml += "<div class='options cont_ht_sf mx-auto'>";

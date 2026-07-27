@@ -81,8 +81,8 @@
 
 
 .icon_wrap{
-    /* position: absolute; */
-    top: 0;
+       position: absolute;
+    top: 78%;
     right: 0;
 }
 

@@ -93,7 +93,7 @@ var linedraw_data = {
             {
                 "text"          : "",
                 "image"         : "../images/pages/activities/Asset_11.png",
-                "answer"        : [5],
+                "answer"        : [3],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             },
@@ -107,28 +107,28 @@ var linedraw_data = {
             {
                 "text"          : "",
                 "image"         : "../images/pages/activities/Asset_13.png",
-                "answer"        : [1],
-                "audio"         : "",
-                "audioenable"   : "default", // correct (or) default
-            },
-            {
-                "text"          : "",
-                "image"         : "../images/pages/activities/Asset_14.png",
                 "answer"        : [6],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             },
             {
                 "text"          : "",
+                "image"         : "../images/pages/activities/Asset_14.png",
+                "answer"        : [5],
+                "audio"         : "",
+                "audioenable"   : "default", // correct (or) default
+            },
+            {
+                "text"          : "",
                 "image"         : "../images/pages/activities/Asset_15.png",
-                "answer"        : [4],
+                "answer"        : [1],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             },
             {
                 "text"          : "",
                 "image"         : "../images/pages/activities/Asset_16.png",
-                "answer"        : [3],
+                "answer"        : [4],
                 "audio"         : "",
                 "audioenable"   : "default", // correct (or) default
             },

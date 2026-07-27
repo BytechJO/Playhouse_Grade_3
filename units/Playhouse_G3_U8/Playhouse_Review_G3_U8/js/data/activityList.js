@@ -12,6 +12,16 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
+       {
+         "file"               : "index_wordsort3.html",
+         'type'               : 'wordsort3',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
       {
          "file"               : "fillin_text_in_sentences_2.html",
          'type'               : 'fillin',

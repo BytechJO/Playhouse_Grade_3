@@ -1,12 +1,12 @@
 .question_group {
-    width: 100%;
+      width: 76%;
     height: 80%;
-    margin: 0 8px;
-    align-items: center;
-    justify-content: center;
+    margin: 0 40px;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .que_item {
-    width: 1010px;
+    /* width: 1010px; */
     /* padding: 5px 10px; */
     position: relative;
     /* padding: 10px; */
@@ -118,7 +118,7 @@
     /* height: 100%; */
     position: absolute;
     bottom: 0px;
-    right: 99px;
+    right: 5px;
 }
 
 .audioIcon.off.d-flex.align-items-center {

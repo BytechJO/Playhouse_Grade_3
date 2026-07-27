@@ -18,11 +18,13 @@ body {
     right: 100px;
 }
 
-
+.orange_text{
+    color: #fa9702;
+}
 
 /* ***************************** */
 .unitTitle .audioIcon {
-    /* margin-right: 100px; */
+    margin-right: 100px;
 }
 /* ***************************** */
 
@@ -243,7 +245,7 @@ body {
 .sub_footer {
     position: fixed;
     right: 0;
-    bottom: 80px;
+    bottom: 40px;
     left: 0;
     z-index: 1039;
     padding-bottom: 4px;

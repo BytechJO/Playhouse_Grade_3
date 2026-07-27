@@ -515,6 +515,14 @@ function setLoadedStatus(val) {
                                 buildLetterPathBody(letterpath_data);
                             }
                             break;
+                               case "wordsort3":
+              if (
+                typeof wordsort3_data != undefined &&
+                wordsort3_data != null
+              ) {
+                buildWordSort3Body(wordsort3_data);
+              }
+              break;
                     }
                 } else {
                     // console.log('no build');
@@ -541,6 +549,7 @@ function setLoadedStatus(val) {
                     case 'wordsearch':
                     case 'linedraw':
                     case 'dragndrop':
+                        case "wordsort3":
                     case 'coloring':
                         callActivityFunctions(_activityData, _actIndx, _fileType, _fileSubType);
                         break;
