@@ -12,15 +12,15 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      {
-         'file'               : 'multiple_choice_2.html',
-         'type'               : 'mcq',
-         'build'              : 'yes', // yes (or) no
-         'activityCtrls'      : 'yes',
-         'layout'             : 1,
-         'visited'            : 0,
-         'score'              : 0,
-      },
+      // {
+      //    'file'               : 'multiple_choice_2.html',
+      //    'type'               : 'mcq',
+      //    'build'              : 'yes', // yes (or) no
+      //    'activityCtrls'      : 'yes',
+      //    'layout'             : 1,
+      //    'visited'            : 0,
+      //    'score'              : 0,
+      // },
       {
          'file'               : 'slide_remember_1.html',
          'type'               : 'standAlone',
@@ -39,12 +39,22 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      {
-         'file'               : 'multiple_choice_4.html',
-         'type'               : 'mcq',
-         'build'              : 'yes', // yes (or) no
+      // {
+      //    'file'               : 'multiple_choice_4.html',
+      //    'type'               : 'mcq',
+      //    'build'              : 'yes', // yes (or) no
+      //    'activityCtrls'      : 'yes',
+      //    'layout'             : 1,
+      //    'visited'            : 0,
+      //    'score'              : 0,
+      // },
+       {
+         "file"               : "index_wordsort3.html",
+         'type'               : 'wordsort3',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
          'activityCtrls'      : 'yes',
-         'layout'             : 1,
+         'layout'             : 2,
          'visited'            : 0,
          'score'              : 0,
       },

@@ -49,6 +49,16 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
+      {
+         "file"               : "index_matchlocations.html",
+         'type'               : 'matchlocations',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
       //Match
       {
          'file'               : 'circle_word_in_sentence.html',
@@ -107,6 +117,15 @@ var _activityData = {
          'score'              : 0,
       },
       //circle - with - fillin
+       {
+         "file"               : "multiple_text_with_fillin.html",
+         "type"               : "mcq",
+         "build"              : "yes",
+         "activityCtrls"      : "yes",
+         "layout"             : 1,
+         "visited"            : 0,
+         "score"              : 0
+      },
       {
          'file'               : 'circle_word_in_sentence_2.html',
          'type'               : 'mcq',
@@ -139,6 +158,15 @@ var _activityData = {
       {
          'file'               : 'slide_images_2.html',
          'type'               : 'standAlone',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no
+         'activityCtrls'      : 'yes',
+         'layout'             : 3,
+         'visited'            : 0,
+      },
+      {
+         'file'               : 'chooseandwrite.html',
+         'type'               : 'chooseandwrite',
          'subtype'            : '',
          'build'              : 'yes', // yes (or) no
          'activityCtrls'      : 'yes',

@@ -143,5 +143,90 @@ var mcq_data = {
                 },
             ]
         },
+           {
+            "question"              : "",
+            "image"                 : "../images/pages/activities/2-img-6.png",
+            "answer"                : [1],
+            "audio"                 : "no",
+            "audioenable"           : "default", // correct (or) default
+            "options"               : [
+                {
+                    "text"          : "right here",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+                {
+                    "text"          : "over there",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+               
+            ]
+        },
+        {
+            "question"              : "",
+            "image"                 : "../images/pages/activities/2-img-7.png",
+            "answer"                : [2],
+            "audio"                 : "no",
+            "audioenable"           : "default", // correct (or) default
+            "options"               : [
+                {
+                    "text"          : "right here",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+                {
+                    "text"          : "over there",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+            ]
+        },
+        {
+            "question"              : "",
+            "image"                 : "../images/pages/activities/2-img-8.png",
+            "answer"                : [1],
+            "audio"                 : "no",
+            "audioenable"           : "default", // correct (or) default
+            "options"               : [
+                {
+                    "text"          : "right here",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+                {
+                    "text"          : "over there",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+            ]
+        },
+        {
+            "question"              : "",
+            "image"                 : "../images/pages/activities/2-img-9.png",
+            "answer"                : [2],
+            "audio"                 : "no",
+            "audioenable"           : "default", // correct (or) default
+            "options"               : [
+                {
+                    "text"          : "right here",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+                {
+                    "text"          : "over there",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+            ]
+        },
     ]
 }

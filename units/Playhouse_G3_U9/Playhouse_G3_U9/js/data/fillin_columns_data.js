@@ -25,7 +25,8 @@ var fillin_data = {
     "mainTitle"             : "../images/pages/sb-icons/phonics-sent-build.png",
     "mainTitleIcon"         : "../images/pages/sb-icons/word_main_title_icon.png",
     "mainTitleIconPos"      : {"right": "-18px"},
-    "mainTitleAudio"        : "../audios/page_47/under.mp3",
+       "mainTitleAudio"        : "../audios/page_47/PHONICS_and_Sentence_Building.mp3",
+
     "subTitleTextLeft"      : '<span class="blue_text">2</span> Write. Put each of the following words in a sentence.',
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],

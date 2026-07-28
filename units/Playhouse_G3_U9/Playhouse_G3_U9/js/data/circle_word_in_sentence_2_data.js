@@ -24,7 +24,7 @@ var mcq_data = {
     "mainTitle"             : "../images/pages/sb-icons/phonics-sent-build.png",
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "60px"},
-    "mainTitleAudio"        : "../audios/page_47/under.mp3",
+    "mainTitleAudio"        : "../audios/page_47/PHONICS_and_Sentence_Building.mp3",
     "subTitleTextLeft"      : "<span class='blue_text'>3</span> Complete each sentence with the correct conjunction (<span class='black_text'>and</span>, <span class='black_text'>but</span>, <span class='black_text'>or</span>)",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],

@@ -229,6 +229,10 @@ function initiateActivityType(aActTyp, aActSubType) {
         theActivity = new DragAndDrop(quePart, dragndrop_data);
     } else if (aActTyp == 'coloring') {
         theActivity = new Coloring(quePart, coloring_data);
+    } else if (aActTyp == 'matchlocations') {
+        theActivity = new MatchLocations(quePart, matchlocations_data);
+    } else if (aActTyp == 'chooseandwrite') {
+        theActivity = new ChooseAndWrite(quePart, chooseandwrite_data);
     } else if (aActTyp == 'standAlone') {
         theActivity = "standAlone";
 

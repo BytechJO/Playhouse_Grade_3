@@ -6,6 +6,8 @@
 
 .image_with_text{
     /* margin-top: 150px; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main_image img {
@@ -14,7 +16,7 @@
 }
 
 .image_audio {
-    position: absolute;
+    /* position: absolute; */
     transform: scale(0.8);
 }
 
@@ -64,7 +66,7 @@
 }
 /* ====================================== */
 .pulse {
-    animation: pulse 1s infinite ease-in-out alternate;
+    /* animation: pulse 1s infinite ease-in-out alternate; */
   }
   @keyframes pulse {
     from { transform: scale(0.9); }

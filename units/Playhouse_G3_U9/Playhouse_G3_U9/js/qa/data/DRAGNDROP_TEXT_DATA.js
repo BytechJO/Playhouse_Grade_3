@@ -23,7 +23,7 @@ var _activity_json = {
     "mainTitle"             : "../images/pages/sb-icons/phonics-sent-build.png",
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "68px"},
-    "mainTitleAudio"        : "../audios/page_47/under.mp3",
+    "mainTitleAudio"        : "../audios/page_47/PHONICS_and_Sentence_Building.mp3",
     "subTitleTextLeft"      : "<span class='title-order'>1</span> Write in the correct ‘-igh’ word from the box to fill in the blank for each sentence.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],

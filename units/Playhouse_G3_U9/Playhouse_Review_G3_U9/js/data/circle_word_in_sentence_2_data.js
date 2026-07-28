@@ -5,7 +5,7 @@ var mcq_data = {
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/under.mp3",
-    "subTitleTextLeft"      : "<span class='blue_text'>5</span> Use the correct conjunction <span class='blue_text'>(and, but, or)</span>.",
+    "subTitleTextLeft"      : "<span class='orange_text'>5</span> Use the correct conjunction <span class='blue_text'>(and, but, or)</span>.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/under.mp3",
@@ -19,7 +19,7 @@ var mcq_data = {
     "imageposition"         :"back",
     "questions"             : [
         {
-            "question"              : "1 I like eating, [_] I don’t like cooking.",
+            "question"              : "I like eating, [_] I don’t like cooking.",
             "options"               : [["and","but","or"]],          
             "answer"                : [2],
 			"inputbox"				:"yes",
@@ -29,7 +29,7 @@ var mcq_data = {
             
         },
         {
-            "question"              : "2 Which one do you want: a spoon [_] a fork?",
+            "question"              : "Which one do you want: a spoon [_] a fork?",
             "options"               : [["and","but","or"]],
             "answer"                : [3],
 			"inputbox"				: "yes",
@@ -38,7 +38,7 @@ var mcq_data = {
             "audioenable"           : "correct", // correct (or) default 
         },
         {
-            "question"              : "3 He called Wes, [_] he called Sandy.",
+            "question"              : "He called Wes, [_] he called Sandy.",
             "options"               : [["and","but","or"]],
             "answer"                : [1],
 			"inputbox"				: "yes",

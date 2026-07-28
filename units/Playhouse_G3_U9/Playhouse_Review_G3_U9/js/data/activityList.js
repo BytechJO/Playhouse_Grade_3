@@ -4,6 +4,16 @@
 var _activityData = {
    "list": [
       {
+         "file"               : "pickwordimg.html",
+         'type'               : 'pickwordimg',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+      {
          "file"               : "fillin_text_in_sentences_2.html",
          'type'               : 'fillin',
          'subtype'            : '',
@@ -43,6 +53,15 @@ var _activityData = {
       },
 
 
+ {
+         'file'               : 'colourdescribe.html',
+         'type'               : 'colourdescribe',
+         'build'              : 'yes', // yes (or) no
+         'activityCtrls'      : 'yes',
+         'layout'             : 1,
+         'visited'            : 0,
+         'score'              : 0,
+      },
 
 
 

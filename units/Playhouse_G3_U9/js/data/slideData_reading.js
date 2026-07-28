@@ -21,7 +21,7 @@ var reading_data = {
     "mainTitle": "../images/icons/reading.png",
     "mainTitleIcon": "../images/pages/sb-icons/adv_icon_1.png",
     "mainTitleIconPos": {"right": "80px"},
-    "mainTitleAudio": "../audios/audio.mp3",
+    "mainTitleAudio": "../audios/new/READING.mp3",
     "subTitleTextLeft": "<span class='orange_text'>1</span> Read. <span class='orange_text'>What room is Ethan talking about? What words did you see that helped you know which room it is?</span>",
     "subTitleTextRight": "",
     "subTitleIcons": [],

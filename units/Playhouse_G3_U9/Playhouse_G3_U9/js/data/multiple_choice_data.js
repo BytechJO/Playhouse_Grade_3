@@ -145,6 +145,114 @@ var mcq_data = {
                 }
             ]
         },
+           {
+            "question"              : "",
+            "image"                 : "../images/pages/activities/1-img-5.png",
+            "answer"                : [3],
+            "audio"                 : "no",
+            "audioenable"           : "default", // correct (or) default
+            "options"               : [
+                {
+                    "text"          : "rolling pin",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+                {
+                    "text"          : "food processor",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+                {
+                    "text"          : "pot",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                }
+            ]
+        },
+        {
+            "question"              : "",
+            "image"                 : "../images/pages/activities/1-img-6.png",
+            "answer"                : [1],
+            "audio"                 : "no",
+            "audioenable"           : "default", // correct (or) default
+            "options"               : [
+                {
+                    "text"          : "blender",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+                {
+                    "text"          : "cutting board",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+                {
+                    "text"          : "peeler",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                }
+            ]
+        },
+        {
+            "question"              : "",
+            "image"                 : "../images/pages/activities/1-img-7.png",
+            "answer"                : [2],
+            "audio"                 : "no",
+            "audioenable"           : "default", // correct (or) default
+            "options"               : [
+                {
+                    "text"          : "toaster",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+                {
+                    "text"          : "grill",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+                {
+                    "text"          : "spatula",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                }
+            ]
+        },
+        {
+            "question"              : "",
+            "image"                 : "../images/pages/activities/1-img-8.png",
+            "answer"                : [2],
+            "audio"                 : "no",
+            "audioenable"           : "default", // correct (or) default
+            "options"               : [
+                {
+                    "text"          : "grater",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+                {
+                    "text"          : "toaster",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                },
+                {
+                    "text"          : "blender",
+                    "image"         : "",
+                    "audio"         : "no",
+                    "audioenable"   : "default", // correct (or) default
+                }
+            ]
+        },
         
        
     ]
