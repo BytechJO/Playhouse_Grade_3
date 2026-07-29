@@ -136,7 +136,7 @@ var fillin_data = {
           "audio": "",
           "audioenable": "default", // correct (or) default
           "image": "../images/pages/activities/Asset_10.png",
-          "answer": ["u","a","ia"],
+          "answer": ["us","a","ia"],
           "alternateanswer": [[]],
           "strictcase": "no", // yes (or) no     
           "strictorder": "yes", // yes (or) no             
