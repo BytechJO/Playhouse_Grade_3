@@ -3,6 +3,16 @@
 // (2) fillin
 var _activityData = {
    "list": [
+        {
+      file: "index_houselabel.html",
+      type: "houselabel",
+      subtype: "",
+      build: "yes", // yes (or) no
+      activityCtrls: "yes",
+      layout: 2,
+      visited: 0,
+      score: 0,
+    },
       {
          "file"               : "fillin_text_in_sentences_2.html",
          'type'               : 'fillin',

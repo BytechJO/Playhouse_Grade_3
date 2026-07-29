@@ -24,7 +24,7 @@ var _activity_json = {
     "mainTitleIcon"         : "",
     "mainTitleAudio"        : "../audios/page_52/PHONICS_and_Sentence_Building.mp3",
     "mainTitleIconPos"      : {"right": "68px"},
-    "mainTitleAudio"        : "../audios/page_52/under.mp3",
+    "mainTitleAudio"        : "../audios/page_52/PHONICS_and_Sentence_Building.mp3",
     "subTitleTextLeft"      : "<span class='blue_text'>1</span> Fill in each blank with the correct ‘aw’ word from the word box.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],

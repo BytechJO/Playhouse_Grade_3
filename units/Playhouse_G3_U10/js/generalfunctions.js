@@ -519,6 +519,14 @@ function setLoadedStatus(val) {
                                 buildLetterPathBody(letterpath_data);
                             }
                             break;
+                            case "colourdescribe":
+              if (
+                typeof colourdescribe_data != undefined &&
+                colourdescribe_data != null
+              ) {
+                buildColourDescribeBody(colourdescribe_data);
+              }
+              break;
                     }
                 } else {
                     // console.log('no build');
@@ -552,6 +560,8 @@ function setLoadedStatus(val) {
                     case 'linedraw':
                     case 'dragndrop':
                     case 'coloring':
+                            case "colourdescribe":
+
                         callActivityFunctions(_activityData, _actIndx, _fileType, _fileSubType);
                         break;
                     default:

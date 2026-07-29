@@ -16,6 +16,11 @@
     display: none !important;
 }
 
+.img-container{
+        display: flex;
+    justify-content: space-evenly;
+}
+
 .textarea-container {
     background-image: url('../images/pages/activities/BOOKS.jpg');
     background-size: cover;
@@ -56,12 +61,12 @@ textarea {
 .drag_drop_options {
     display: inline-block;
     padding: 14px;
-    margin: 0px auto;
-    margin-bottom: 20px;
+    /* margin: 0px auto; */
+    /* margin-bottom: 20px; */
     width: 139px;
-    min-width: 139px;
-    height: 380px;
-    min-height: 380px;
+    /* min-width: 139px; */
+    height:fit-content;
+    /* min-height: 380px; */
     text-align: center;
     background-color: #e1f4fd;
     border: solid 2px #00aeef;

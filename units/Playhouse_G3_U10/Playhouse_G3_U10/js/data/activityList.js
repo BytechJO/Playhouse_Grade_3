@@ -32,6 +32,16 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
+      {
+         "file"               : "storywordchoice.html",
+         'type'               : 'storywordchoice',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
       //circle
       {
          "file"               : "fillin_with_img.html",
@@ -43,8 +53,8 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      {
-         "file"               : "fillin_with_img_2.html",
+         {
+         "file"               : "fillin_text_P23_2.html",
          'type'               : 'fillin',
          'subtype'            : '',
          'build'              : 'yes', // yes (or) no   
@@ -57,6 +67,15 @@ var _activityData = {
          "file"               : "drag_drop_text.html",
          "type"               : "standAlone",
          "build"              : "no",
+         "activityCtrls"      : "no",
+         "layout"             : 1,
+         "visited"            : 0,
+         "score"              : 0
+      },
+      {
+         "file"               : "index_syllablecolour.html",
+         "type"               : "syllablecolour",
+         "build"              : "yes",
          "activityCtrls"      : "no",
          "layout"             : 1,
          "visited"            : 0,

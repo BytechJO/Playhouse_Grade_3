@@ -515,6 +515,11 @@ function setLoadedStatus(val) {
                                 buildLetterPathBody(letterpath_data);
                             }
                             break;
+                             case 'houselabel':
+                            if (typeof houselabel_data != undefined && houselabel_data != null) {
+                                buildHouseLabelBody(houselabel_data);
+                            }
+                            break;
                     }
                 } else {
                     // console.log('no build');
@@ -542,6 +547,7 @@ function setLoadedStatus(val) {
                     case 'linedraw':
                     case 'dragndrop':
                     case 'coloring':
+                    case 'houselabel':
                         callActivityFunctions(_activityData, _actIndx, _fileType, _fileSubType);
                         break;
                     default:

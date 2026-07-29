@@ -21,7 +21,7 @@ var stereo_data = {
 
 var fillin_data = {    
     "layout"                : 1,
-    "numinrow"              : [[1,1]],
+    "numinrow"              : [[1,1,1,1]],
     "mainTitle"             : "../images/pages/sb-icons/gramprac_main_title.png",
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
@@ -53,5 +53,25 @@ var fillin_data = {
             "strictcase": "no", // yes (or) no 
             "type": "text", // text (or) number
         },
+         {
+            "textfront": "",
+            "textend": "",
+            "audio": "../audios/page_51/under.mp3",
+            "audioenable": "default", // correct (or) default
+            "image": "../images/pages/activities/2-img-3.png",
+            "answer": ["bed"],
+            "strictcase": "no", // yes (or) no
+            "type": "text", // text (or) number
+        },
+        {
+            "textfront": "",
+            "textend": "",
+            "audio": "../audios/page_51/under.mp3",
+            "audioenable": "default", // correct (or) default
+            "image": "../images/pages/activities/2-img-4.png",
+            "answer": ["fridge"],
+            "strictcase": "no", // yes (or) no
+            "type": "text", // text (or) number
+        }
     ]
 }

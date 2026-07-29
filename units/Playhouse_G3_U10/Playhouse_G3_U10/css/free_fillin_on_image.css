@@ -101,8 +101,8 @@
 }
 
 .que[status="label"] .blue_order {
-    width: 43px;
-    height: 43px;
+    width: 34px;
+    height: 34px;
     border: 1px solid rgb(0, 185, 242);
     background-color: #fff;
     border-radius: 50px;
@@ -113,8 +113,8 @@
 }
 
 .que[status="fill"] .text_input_area {
-    width: 43px;
-    /* height: 43px; */
+       width: 34px;
+    height: 34px;
     text-align: center;
     border: none;
     border-radius: 50px;
@@ -131,58 +131,58 @@
 }
 
 .que[data-qno="12"]{
-    top: 100px;
-    left: 300px;
+  top: 20%;
+    left: 29%;
 }
 
 .que[data-qno="13"] {
-    top: 106px;
-    left: 367px
+  top: 31%;
+    left: 45%;
 }
 
 .que[data-qno="14"] {
-    top: 171px;
-    left: 301px;
+       top: 43%;
+    left: 36%;
 }
 
 .que[data-qno="15"] {
-    top: 230px;
-    left: 417px;
+   top: 53%;
+    left: 27%;
 }
 
 .que[data-qno="16"] {
-    top: 155px;
-    left: 570px;
+  top: 36%;
+    left: 25%;
 }
 
 .que[data-qno="17"] {
-    top: 305px;
-    left: 353px;
+     top: 17%;
+    left: 23%;
 }
 
 .que[data-qno="18"] {
-    top: 310px;
-    left: 244px;
+   top: 80%;
+    left: 34%;
 }
 
 .que[data-qno="19"] {
-    top: 270px;
-    left: 169px;
+       top: 92%;
+    left: 27%;
 }
 
 .que[data-qno="20"] {
-    top: 293px;
-    left: 62px;
+   top: 59%;
+    left: 19%;
 }
 
 .que[data-qno="21"] {
-    top: 420px;
-    left: 393px;
+  top: 54%;
+    left: 13%;
 }
 
 .que[data-qno="22"] {
-    top: 465px;
-    left: 336px;
+      top: 56%;
+    left: 2%;
 }
 
 

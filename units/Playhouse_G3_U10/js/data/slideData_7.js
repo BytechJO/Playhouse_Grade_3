@@ -23,7 +23,7 @@ var reading_data = {
   "mainTitleIcon": "../images/pages/sb-icons/gram_main_title_icon.png",
   "mainTitleAudio": "../audios/page_90/GRAMMAR.mp3",
   "mainTitleIconPos"      : {"right": "-18px"},
-  "subTitleTextLeft": "<span class='red_text'>1</span> Read and say.",
+  "subTitleTextLeft": "<span class='orange_text'>1</span> Read and say.",
   "subTitleTextRight": "",
   "subTitleIcons": [],
   "subTitleAudio": "../audios/page_90/1_Read_and_say.mp3",

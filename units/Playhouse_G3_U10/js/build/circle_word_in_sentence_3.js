@@ -150,7 +150,8 @@ function buildMcqBody(aObj) {
 					htmlStmt += '</div>';
 
 				}
-			}									
+			}		
+
 			htmlStmt += '</div>';// --/ tick_group
 							
 		}
@@ -159,6 +160,30 @@ function buildMcqBody(aObj) {
                 htmlStmt += '<div class="img_space"><img src="'+aObj.image+'"  class="pulse"></img></div>';
             }
         }		
+
+   if (aObj.rightImage != undefined && aObj.rightImage != "") {
+      htmlStmt += '<div class="right_container">';
+      htmlStmt +=
+        '<div id="right_image_container" class="right-image-container">';
+      htmlStmt += '<span class="header"></span>';
+      htmlStmt += '<div class="textOnImage-container">';
+      for (t = 0; t < aObj.rightText.length; t++) {
+        htmlStmt +=
+          ' <div class="audioIcon off textOnImage" data-audio="' +
+          aObj.rightTextAudio[t] +
+          '" style="display: block;">' +
+          aObj.rightText[t] +
+          "</div> ";
+      }
+      htmlStmt += "</div>";
+      htmlStmt += "</div>";
+      htmlStmt +=
+        '<img src="../images/pages/activities/find_in_story.png" id="shakingImage" onclick="showBox()"/>';
+      htmlStmt += "</div>";
+    }
+
+		
+
 		htmlStmt += '</div></div></div>'; // --/ d-flex flex-wrap / all_cont / options
 		
 	}
@@ -166,7 +191,24 @@ function buildMcqBody(aObj) {
 	$( ".activity_area" ).append( htmlStmt );	
 	
 	setLoadedStatus(getCurrFileOrDirectory('file'));
+	showBox()
 }
 function nextChar(c) {
 	return String.fromCharCode(c.charCodeAt(0) + 1);
 }  
+
+
+function showBox() {
+  $("#right_image_container").toggle(2500);
+}
+function shakeImage() {
+  $("#shakingImage").css("transform", "rotate(4deg)");
+  setTimeout(function () {
+    $("#shakingImage").css("transform", "rotate(-4deg)");
+    setTimeout(function () {
+      $("#shakingImage").css("transform", "rotate(0deg)");
+      // Call shakeImage again after 3 seconds (adjust as needed)
+      setTimeout(shakeImage, 900);
+    }, 100);
+  }, 100);
+}

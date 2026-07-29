@@ -5,7 +5,7 @@ var mcq_data = {
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/under.mp3",
-    "subTitleTextLeft"      : "<span class='blue_text'>3</span> Read the sentence and circle T if it’s true and F if it’s false.",
+    "subTitleTextLeft"      : "<span class='orange_text'>3</span> Read the sentence and circle T if it’s true and F if it’s false.",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],
     "subTitleAudio"         : "../audios/under.mp3",

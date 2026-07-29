@@ -23,6 +23,25 @@ var _activityData = {
       },
       //colour
       {
+         'file'               : 'colourdescribe.html',
+         'type'               : 'colourdescribe',
+         'build'              : 'yes', // yes (or) no
+         'activityCtrls'      : 'yes',
+         'layout'             : 1,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+        {
+         "file"               : "fillin_text_P23_2.html",
+         'type'               : 'fillin',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+      {
          'file'               : 'slide_7.html',
          'type'               : 'standAlone',
          'subtype'            : '',
@@ -61,16 +80,16 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      {
-         "file"               : "fillin_text_4.html",
-         'type'               : 'fillin',
-         'subtype'            : '',
-         'build'              : 'yes', // yes (or) no   
-         'activityCtrls'      : 'yes',
-         'layout'             : 2,
-         'visited'            : 0,
-         'score'              : 0,
-      },
+      // {
+      //    "file"               : "fillin_text_4.html",
+      //    'type'               : 'fillin',
+      //    'subtype'            : '',
+      //    'build'              : 'yes', // yes (or) no   
+      //    'activityCtrls'      : 'yes',
+      //    'layout'             : 2,
+      //    'visited'            : 0,
+      //    'score'              : 0,
+      // },
       {
          "file"               : "fillin_text_image.html",
          'type'               : 'fillin',

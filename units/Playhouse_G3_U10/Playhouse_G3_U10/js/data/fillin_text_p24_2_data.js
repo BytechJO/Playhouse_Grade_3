@@ -63,7 +63,7 @@ var fillin_data = {
           "options_words_audios":["../audios/page_50/under.mp3","../audios/page_50/under.mp3","../audios/page_50/under.mp3"],
           "audioenable": "default", // correct (or) default
           "image": "",
-          "answer": ["safer"],
+          "answer": ["hotter"],
           "alternateanswer": [[]],
           "strictcase": "no", // yes (or) no     
           "strictorder": "yes", // yes (or) no             
@@ -79,7 +79,7 @@ var fillin_data = {
           "options_words_audios":["../audios/page_50/under.mp3","../audios/page_50/under.mp3","../audios/page_50/under.mp3"],
           "audioenable": "default", // correct (or) default
           "image": "",
-          "answer": ["hotter"],
+          "answer": ["bigger"],
           "alternateanswer": [[]],
           "strictcase": "no", // yes (or) no    
           "strictorder": "yes", // yes (or) no              
@@ -95,7 +95,7 @@ var fillin_data = {
           "options_words_audios":["../audios/page_50/under.mp3","../audios/page_50/under.mp3","../audios/page_50/under.mp3"],
           "audioenable": "default", // correct (or) default
           "image": "",
-          "answer": ["happier"],
+          "answer": ["prettier"],
           "alternateanswer": [[]],
           "strictcase": "no", // yes (or) no    
           "strictorder": "yes", // yes (or) no              
@@ -111,7 +111,7 @@ var fillin_data = {
           "options_words_audios":["../audios/page_50/under.mp3","../audios/page_50/under.mp3","../audios/page_50/under.mp3"],
           "audioenable": "default", // correct (or) default
           "image": "",
-          "answer": ["bigger"],
+          "answer": ["safer"],
           "alternateanswer": [[]],
           "strictcase": "no", // yes (or) no    
           "strictorder": "yes", // yes (or) no              
@@ -127,7 +127,7 @@ var fillin_data = {
           "options_words_audios":["../audios/page_50/under.mp3","../audios/page_50/under.mp3","../audios/page_50/under.mp3"],
           "audioenable": "default", // correct (or) default
           "image": "",
-          "answer": ["heavier"],
+          "answer": ["happier"],
           "alternateanswer": [[]],
           "strictcase": "no", // yes (or) no    
           "strictorder": "yes", // yes (or) no              
@@ -143,7 +143,7 @@ var fillin_data = {
           "options_words_audios":["../audios/page_50/under.mp3","../audios/page_50/under.mp3","../audios/page_50/under.mp3"],
           "audioenable": "default", // correct (or) default
           "image": "",
-          "answer": ["prettier"],
+          "answer": ["heavier"],
           "alternateanswer": [[]],
           "strictcase": "no", // yes (or) no    
           "strictorder": "yes", // yes (or) no              

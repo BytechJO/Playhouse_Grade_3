@@ -227,7 +227,9 @@ function initiateActivityType(aActTyp, aActSubType) {
         theActivity = new LineDraw(quePart, linedraw_data);
     } else if (aActTyp == 'dragndrop') {
         theActivity = new DragAndDrop(quePart, dragndrop_data);
-    } else if (aActTyp == 'coloring') {
+    }else if (aActTyp == 'colourdescribe') {
+        theActivity = new ColourDescribe(quePart, colourdescribe_data);
+    }  else if (aActTyp == 'coloring') {
         theActivity = new Coloring(quePart, coloring_data);
     } else if (aActTyp == 'standAlone') {
         theActivity = "standAlone";

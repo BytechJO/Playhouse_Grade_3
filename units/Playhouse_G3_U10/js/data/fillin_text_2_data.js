@@ -32,6 +32,7 @@ var fillin_data = {
     "image"                 : "",
     "imageposition"         : "back",// "front" (or) "back"
     "defaultAnswer"         : 1,
+     "crossQuestionOrder": "no",   // ← هاد السطر بس اللي لازم تضيفه
     "numbering"             : "none", // "alphabet" (or) "number"
     "numberstartfrom"       : 1,
     "options"               : ["high", "pretty", "safe", "great", "nice", "light", "wide", "scary"],
