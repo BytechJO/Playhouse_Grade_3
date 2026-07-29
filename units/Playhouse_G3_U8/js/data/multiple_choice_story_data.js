@@ -180,7 +180,7 @@ var mcq_data = {
             ]
         },
         {
-            "question"              : " ",
+            "question"              : "",
             "image"                 : "no",
             "answer"                : [5],
             "audio"                 : "no",
@@ -318,7 +318,7 @@ var mcq_data = {
             ]
         },
         {
-            "question"              : " ",
+            "question"              : "",
             "image"                 : "no",
             "answer"                : [4,11,12,23],
             "audio"                 : "no",
