@@ -96,7 +96,7 @@ var mcq_data = {
             ]
         },
         {
-            "question"              : " ",
+            "question"              : "",
             "image"                 : "no",
             "answer"                : [7],
             "audio"                 : "no",
@@ -205,7 +205,7 @@ var mcq_data = {
             ]
         },
         {
-            "question"              : " ",
+            "question"              : "",
             "image"                 : "no",
             "answer"                : [6],
             "audio"                 : "no",

@@ -189,7 +189,7 @@ function buildReadingHTML(aObj) {
                     var ImagePos = slide.imagePlacePos;
                     if (ImagePos != undefined) {
                         for (var snapIndex = 0; snapIndex < ImagePos.length; snapIndex++) {
-                            slideHtml += "<div class='snap_group_" + Number(snapIndex + 1) + " row mx-0'>";
+                            slideHtml += "<div class='snap_group_" + Number(snapIndex + 1) + " row mx-0 justify-content-around'>";
                             for (var imgIndex = 0; imgIndex < ImagePos[snapIndex].colData.length; imgIndex++) {
                                 slideHtml += "<div class='col-12 col-md-" + ImagePos[snapIndex].colWidth[imgIndex] + " col_card'>";
                                 slideHtml += "<div class='snap_card mx-0 mx-md-auto audioIcon' data-slideNum='" + Number(slideIndex + 1) + "' data-audio='" + audioArry[curIndex] + "'data-onaudioplay='color:#e43b6d'>"

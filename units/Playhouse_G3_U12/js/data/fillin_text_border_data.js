@@ -47,7 +47,9 @@ var fillin_data = {
           "images": ["../images/pages/activities/1-img-1.png","../images/pages/activities/1-img-2.png"],
           "images_name": [],
           "answer": ["The seagull flies as high as the eagle"],
-          "alternateanswer": [[]],
+          // NEW: swapping which one is named first is equally correct,
+          // since they fly the same height either way
+          "alternateanswer": [["The eagle flies as high as the seagull"]],
           "strictcase": "no", // yes (or) no  
           "strictorder": "yes", // yes (or) no              
           "maxlength": 200,
@@ -62,8 +64,8 @@ var fillin_data = {
           "title":"",
           "images": ["../images/pages/activities/1-img-3.png","../images/pages/activities/1-img-4.png"],
           "images_name": [],
-          "answer": ["Her eyes are is as clear blue as the sea"],
-          "alternateanswer": [[]],
+          "answer": ["Her eyes are as clear blue as the sea"],
+          "alternateanswer": [["The sea is as clear blue as her eyes"]],
           "strictcase": "no", // yes (or) no     
           "strictorder": "yes", // yes (or) no             
           "maxlength": 200,
@@ -79,9 +81,41 @@ var fillin_data = {
           "images": ["../images/pages/activities/1-img-5.png"],
           "images_name": [],
           "answer": ["You are as nice as my cousin"],
-          "alternateanswer": [[]],
+          "alternateanswer": [["My cousin is as nice as you"]],
           "strictcase": "no", // yes (or) no    
           "strictorder": "yes", // yes (or) no              
+          "maxlength": 200,
+          "type": "", // text (or) number
+        },
+         {
+          "singleword": false,
+          "text": "My hair is eight centimetres long. <br> Her hair is eight centimetres long, too.[_]",
+          "textaudios": ["../audios/under.mp3"],
+          "audio": "",
+          "audioenable": "default", // correct (or) default
+          "title":"",
+          "images": ["../images/pages/activities/1-img-6.png"],
+          "images_name": [],
+          "answer": ["Her hair is as long as my hair"],
+          "alternateanswer": [["My hair is as long as her hair"]],
+          "strictcase": "no", // yes (or) no  
+          "strictorder": "yes", // yes (or) no              
+          "maxlength": 200,
+          "type": "", // text (or) number
+        },
+        {
+          "singleword": false,
+          "text": "Greg is nine years old. <br> Tess is nine years old, too.[_]",
+          "textaudios": ["../audios/under.mp3","../audios/under.mp3"],
+          "audio": "",
+          "audioenable": "default", // correct (or) default
+          "title":"",
+          "images": ["../images/pages/activities/1-img-7.png"],
+          "images_name": [],
+          "answer": ["Tess is as old as Greg"],
+          "alternateanswer": [["Greg is as old as Tess"]],
+          "strictcase": "no", // yes (or) no     
+          "strictorder": "yes", // yes (or) no             
           "maxlength": 200,
           "type": "", // text (or) number
         },

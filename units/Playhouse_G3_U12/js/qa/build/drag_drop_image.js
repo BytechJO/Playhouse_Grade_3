@@ -9,7 +9,7 @@ function initActivity(activity){
 
 
 	//Questions
-	drag_drop_questions = '<div class="drag_drop_questions"><ul  class="d-flex flex-column">';
+	drag_drop_questions = '<div class="drag_drop_questions"><ul  class="d-flex flex-column align-item-center" >';
 	img_array = activity.images
 	jQuery.each(activity.questions, function(key, values){
 		drag_drop_questions += '<li class="d-flex flex-wrap" style=" width: 950px;"><ul>';
@@ -39,19 +39,10 @@ function initActivity(activity){
 	
 
 	var html = '';
-	html += '<div style="height:100%;">';
+	html += '<div style="height:100%;margin-bottom: 65px;">';
 
-	/*if(
-		(typeof(_activity_json.layout)!="undefined")&&
-		(_activity_json.layout=="top")
-	){
-		html += drag_drop_options + drag_drop_questions;
-	} else {
-		html += drag_drop_questions + drag_drop_options;
-	}*/
-
+	// ⬇️ هاد كله زي ما هو، ما لمسناه أبدًا
 	html += drag_drop_options + drag_drop_questions;
-
 
 	if(
 		(typeof(activity.background_image)!='undefined') && 
@@ -61,9 +52,61 @@ function initActivity(activity){
 		html += '<img src="../images/pages/activities/'+activity.background_image+'" />';
 		html += '</div>';
 	}
+	// ⬆️ لهون كله بلا أي تغيير
 
+	// ================================================================ [ SentenceBuilding ]
+	// NEW SECTION — بيضاف بس هون، بعد كل شي موجود، وقبل إغلاق الـ wrapper.
+	// إذا activity.sentenceBuilding مش موجود بالداتا، هاد القسم كامل ما بينبنى ولا حرف.
+	if(
+		(typeof(activity.sentenceBuilding) != 'undefined') &&
+		(activity.sentenceBuilding != null) &&
+		(typeof(activity.sentenceBuilding.items) != 'undefined') &&
+		(activity.sentenceBuilding.items.length > 0)
+	){
+		var sbData = activity.sentenceBuilding;
+
+		html += '<div class="SentenceBuilding_container">';
+		html += '<div class="cont_items d-flex flex-wrap">';
+		html += '<div class="main_title_container">';
+		html += '<div class="main_title_text">';
+		if (sbData.main_title_text.length > 1) {
+			for (let x = 0; x < sbData.main_title_text.length; x++) {
+				html += '<div class="audioIcon textEnd off d-flex contant" data-audio="' + sbData.main_title_audio + '">';
+				html += "<div class='letter letter-" + x + " pulse'>" + sbData.main_title_text[x] + "</div>";
+				html += "</div>";
+			}
+		} else {
+			html += "<div class=''>" + sbData.main_title_text + "</div>";
+		}
+		html += "</div>";
+		html += "</div>";
+
+		html += '<div class="d-flex justify-content-between" style="width:100%">';
+		for (let i = 0; i < sbData.items.length; i++) {
+			if (i == 0) {
+				html += '<div class="d-flex imgs_sides" >';
+				html += "<img src='" + sbData.items[i].text_img + "' class='readHighlightsBtn imgToggle' data-img='showImg1'>";
+				html += "<img src='" + sbData.items[i].img + "' class='text_img showImg1 audioIcon off' data-audio='" + sbData.items[i].audio + "'>";
+				html += "</div>";
+			} else if (i == 1) {
+				html += '<div class="middle-text">';
+				html += "<span class='text audioIcon off' data-audio='" + sbData.items[i].audio + "'>" + sbData.items[i].text + "</span>";
+				html += "</div>";
+			} else if (i == 2) {
+				html += '<div class="d-flex imgs_sides">';
+				html += "<img src='" + sbData.items[i].img + "' class='text_img showImg2 audioIcon off' data-audio='" + sbData.items[i].audio + "'>";
+				html += "<img src='" + sbData.items[i].text_img + "' class='readHighlightsBtn imgToggle' data-img='showImg2' style='margin-left: auto;'>";
+				html += "</div>";
+			}
+		}
+		html += "</div>";
+		html += "</div>";
+		html += "</div>";
+	}
+	// ================================================================ [ / SentenceBuilding ]
 
 	html += '</div>';
+	showSentenceImg()
 	writeHtml(activity, html);
 	setDefaultAnswerDragDrop(activity);
 
@@ -72,19 +115,58 @@ function initActivity(activity){
 		//jQuery('.drag_drop_options').css('top', (jQuery('.activity-heading').offset().top + jQuery('.activity-heading').height())+20);
 	}
 
-	jQuery('.drag_drop_options div.draggable_div').draggable({
-	  container: jQuery('.activity-content'),
-      revert: true,
-      placeholder: true,
-      droptarget: '.drag_drop_questions input.droppable_div',
-      drop: function(evt, droptarget) {
-        jQuery(droptarget).val(evt.target.innerText);
-        jQuery(droptarget).removeClass('droppable_div');
+	function makeWordsDraggable($els){
+		$els.draggable({
+			container: jQuery('.activity-content'),
+			revert: true,
+			placeholder: true,
+			droptarget: '.drag_drop_questions .droppable_text_div',
+			drop: function(evt, droptarget) {
+				var $targetInput = jQuery(droptarget).find('input.droppable_div').first();
 
-        jQuery(this).remove();//('destroy');
-        detectDragend();
-      }
-    });
+				if($targetInput.length == 0 || $targetInput.val() != ''){
+					return;
+				}
+
+				$targetInput.val(jQuery(this).attr('data-value'));
+				$targetInput.removeClass('droppable_div');
+
+				jQuery(this).remove();
+				detectDragend();
+			}
+		});
+	}
+
+	makeWordsDraggable(jQuery('.drag_drop_options div.draggable_div'));
+
+
+	jQuery(document).on('click', '.drag_drop_questions input[type="text"]', function(){
+		var $input = jQuery(this);
+
+		if($input.val() == '' || $input.hasClass('droppable_div')){
+			return;
+		}
+
+		var wordValue = $input.val();
+		var $newChip = jQuery('<div class="draggable_div" data-value="'+wordValue+'" style="background-color: transparent;">'+wordValue+'</div>');
+		jQuery('.drag_drop_options').append($newChip);
+		makeWordsDraggable($newChip);
+
+		$input.val('').addClass('droppable_div');
+
+		detectDragend();
+	});
 
 }
 
+
+function showSentenceImg(){
+    $(document).ready(function () {
+        $(".imgToggle").click(
+            function () {
+            var imgName = $(this).data("img");
+            $('.'+imgName).fadeToggle(1000);
+        }
+        );
+    });
+}

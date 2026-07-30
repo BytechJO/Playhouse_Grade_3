@@ -24,7 +24,7 @@ var _activity_json =
         "numinrow"              : [[1,1,1]],
         "mainTitle"             : "../images/icons/gramprac_main_title.png",
         "mainTitleIcon"         : "../images/pages/sb-icons/gram_main_title_icon.png",
-        "mainTitleAudio"        : "../audios/under.mp3",
+        "mainTitleAudio"        : "../audios/new/GRAMMAR_PRACTICE.mp3",
         "mainTitleIconPos"      : {"right": "80px"},
         "subTitleTextLeft"      : '<span class="orange_text">1</span> Complete.  <span class="orange_text">Fill in the blanks using the correct word from the word box for each sentence.</span>',
         "subTitleTextRight"     : "",

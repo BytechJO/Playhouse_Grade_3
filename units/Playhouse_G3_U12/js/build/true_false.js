@@ -70,7 +70,7 @@
 				// 	xx =(x+parseInt(aObj.numberstartfrom));					
 				// }
 				htmlStmt += '</div>';
-				htmlStmt += '<div class="d-flex flex-wrap fillin_wrap">';
+				htmlStmt += '<div class="d-flex fillin_wrap">';
 				if(tmpObj.audio != "no"){
 					htmlStmt += '<div class="text background_audio">';
 					htmlStmt += '<div class="audioIcon off d-flex contant min_w_fit_contant" data-audio="' + tmpObj.audio + '">';

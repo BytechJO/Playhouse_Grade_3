@@ -10,6 +10,7 @@
 .activity_container ul {
   /* margin: 0px auto; */
   padding: 0px;
+    align-items: center;
 }
 
 .activity_container ul li {
@@ -20,6 +21,7 @@
   /* margin-top: 15px;
   margin-left: 65px; */
   margin: 15px auto;
+
 }
 
 .activity-heading {
@@ -181,7 +183,7 @@
     width: 50%;*/
   /* font-size: 22px; */
   /* width: 80%; */
-  margin: 0px auto;
+    margin: 48px auto;
 }
 
 .drag_drop_questions .que {

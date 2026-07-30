@@ -100,11 +100,11 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   /* margin: 25px; */
-  width: 160px;
+  width: 135px;
 }
 
 .drop {
-  margin: 10px;
+  margin: 3px;
 }
 
 .imgHolder {
@@ -127,7 +127,7 @@ body {
 }
 
 .drop .imgHolder img {
-  width: 130px !important;
+  width: 100px !important;
   height: 150px;
   object-fit: contain;
 

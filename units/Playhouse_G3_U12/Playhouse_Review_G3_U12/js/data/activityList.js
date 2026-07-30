@@ -32,8 +32,26 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-
-
+   {
+         "file"               : "unscramblewrite.html",
+         'type'               : 'unscramblewrite',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+{
+         "file"               : "colourdescribe.html",
+         'type'               : 'colourdescribe',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
 
       // {
       //    "file"               : "fillin_text_in_sentences_5.html",

@@ -61,16 +61,16 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      {
-         "file"               : "fillin_text_border_2.html",
-         'type'               : 'fillin',
-         'subtype'            : '',
-         'build'              : 'yes', // yes (or) no   
-         'activityCtrls'      : 'yes',
-         'layout'             : 2,
-         'visited'            : 0,
-         'score'              : 0,
-      },
+      // {
+      //    "file"               : "fillin_text_border_2.html",
+      //    'type'               : 'fillin',
+      //    'subtype'            : '',
+      //    'build'              : 'yes', // yes (or) no   
+      //    'activityCtrls'      : 'yes',
+      //    'layout'             : 2,
+      //    'visited'            : 0,
+      //    'score'              : 0,
+      // },
       {
          "file"               : "drag_drop_text.html",
          "type"               : "standAlone",
