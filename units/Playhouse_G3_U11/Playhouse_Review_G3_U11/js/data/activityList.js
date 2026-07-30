@@ -31,6 +31,16 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
+ {
+         "file"               : "index_lookcirclewrite.html",
+         'type'               : 'lookcirclewrite',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
 
 
 

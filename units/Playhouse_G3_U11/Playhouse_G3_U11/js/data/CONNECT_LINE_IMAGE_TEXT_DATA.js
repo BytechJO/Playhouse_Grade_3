@@ -21,7 +21,7 @@ var stereo_data = {
 
 var linedraw_data = {    
     "layout"                : 1,
-    "mainTitle"             : "../images/pages/sb-icons/spilling.jpg",
+    "mainTitle"             : "../images/pages/sb-icons/phonics-sent-build.png",
     "mainTitleIcon"         : "",
     "mainTitleIconPos"      : {"right": "80px"},
     "mainTitleAudio"        : "../audios/page_57/PHONICS_and_Sentence_Building.mp3",

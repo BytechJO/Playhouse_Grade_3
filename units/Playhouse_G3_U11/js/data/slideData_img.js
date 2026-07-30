@@ -23,7 +23,7 @@ var reading_data = {
   "mainTitleIcon": "../images/pages/sb-icons/phonics_main_title_icon.png",
   "mainTitleIconPos": {"right": "-20px"},
   "mainTitleAudio": "../audios/page_101/PHONICS.mp3",
-  "subTitleTextLeft": "<span class='red_text'>1</span> Listen, read and practise.",
+  "subTitleTextLeft": "<span class='orange_text'>1</span> Listen, read and practise.",
   "subTitleTextRight": "",
   "subTitleIcons": [""],
   "subTitleAudio": "../audios/page_101/1_Listen_read_and_practise.mp3",

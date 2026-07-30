@@ -5,7 +5,9 @@
 .snap_group_all {
     width: 100%;
     position: absolute;
-    top: 54px;
+    top: 27px;
+    left: 4%;
+
 }
 
 .ss_text {

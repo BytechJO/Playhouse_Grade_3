@@ -151,7 +151,7 @@ th .Box {
 .fillin_gr table tr>td:nth-child(2),
 .fillin_gr table tr>td:nth-child(2) .Box
 {
-    width: 700px;
+       width: 435px;
     font-size: 24px;
     /* border: 2px solid red; */
 }
@@ -205,9 +205,9 @@ table tr th{
 /* // Large devices (desktops, less than 1400px) */
 
 @media (max-width: 1399.98px) {
-    .img_fillin_gr {
+    /* .img_fillin_gr {
         width: 60%;
-    }
+    } */
 }
 
 

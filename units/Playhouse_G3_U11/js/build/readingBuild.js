@@ -124,7 +124,7 @@ function buildReadingHTML(aObj) {
                             if (examplesTextPos != undefined) {
                                 curIndex = 0;
                                 for (var snapIndex = 0; snapIndex < examplesTextPos.length; snapIndex++) {
-                                    slideHtml += "<div class='snap_group_" + Number(snapIndex + 1) + " row mx-0 example_text'>";
+                                    slideHtml += "<div class='snap_group_" + Number(snapIndex + 1) + " mx-0 example_text'>";
                                     for (var imgIndex = 0; imgIndex < examplesTextPos[snapIndex].colData.length; imgIndex++) {
                                         slideHtml += "<div class='col-12 col-md-" + examplesTextPos[snapIndex].colWidth[imgIndex] + " col_card'>";
                                         slideHtml += "<div class='snap_card mx-0 mx-md-auto audioIcon' data-slideNum='" + Number(slideIndex + 1) + "' data-audio='" + audioArry[curIndex] + "'data-onaudioplay='color:#e43b6d'>"

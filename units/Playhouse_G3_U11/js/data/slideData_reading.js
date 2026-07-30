@@ -25,7 +25,7 @@ var reading_data = {
     "subTitleTextLeft": "<span class='orange_text'>1</span> Read. <span class='orange_text'>Have you ever seen a butterfly? Describe what your butterfly looked like.</span>",
     "subTitleTextRight": "",
     "subTitleIcons": [""],
-    "subTitleAudio": "../audios/under.mp3",
+    "subTitleAudio": "../audios/page_100/1_Read.mp3",
     "slides": [
         {
             "layout": "grid_columns",

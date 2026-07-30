@@ -205,9 +205,9 @@ table tr th{
 /* // Large devices (desktops, less than 1400px) */
 
 @media (max-width: 1399.98px) {
-    .img_fillin_gr {
+    /* .img_fillin_gr {
         width: 60%;
-    }
+    } */
 }
 
 
