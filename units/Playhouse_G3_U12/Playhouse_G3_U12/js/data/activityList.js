@@ -13,16 +13,16 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      {
-         "file"               : "fillin_with_img_2.html",
-         'type'               : 'fillin',
-         'subtype'            : '',
-         'build'              : 'yes', // yes (or) no   
-         'activityCtrls'      : 'yes',
-         'layout'             : 2,
-         'visited'            : 0,
-         'score'              : 0,
-      },
+      // {
+      //    "file"               : "fillin_with_img_2.html",
+      //    'type'               : 'fillin',
+      //    'subtype'            : '',
+      //    'build'              : 'yes', // yes (or) no   
+      //    'activityCtrls'      : 'yes',
+      //    'layout'             : 2,
+      //    'visited'            : 0,
+      //    'score'              : 0,
+      // },
       {
          'file'               : 'slide_remember.html',
          'type'               : 'standAlone',
@@ -62,17 +62,26 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      {
-         "file"               : "fillin_text_border_2.html",
-         'type'               : 'fillin',
-         'subtype'            : '',
-         'build'              : 'yes', // yes (or) no   
-         'activityCtrls'      : 'yes',
-         'layout'             : 2,
-         'visited'            : 0,
-         'score'              : 0,
-      },
+      // {
+      //    "file"               : "fillin_text_border_2.html",
+      //    'type'               : 'fillin',
+      //    'subtype'            : '',
+      //    'build'              : 'yes', // yes (or) no   
+      //    'activityCtrls'      : 'yes',
+      //    'layout'             : 2,
+      //    'visited'            : 0,
+      //    'score'              : 0,
+      // },
       //Word search Squer - with - fillin
+      {
+         "file"               : "index_wordsearchwrite.html",
+         "type"               : "wordsearchwrite",
+         "build"              : "yes",
+         "activityCtrls"      : "yes",
+         "layout"             : 1,
+         "visited"            : 0,
+         "score"              : 0
+      },
       {
          "file"               : "drag_drop_text.html",
          "type"               : "standAlone",

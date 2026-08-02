@@ -81,7 +81,48 @@ function initActivity(activity){
         detectDragend();
       }
     });
+jQuery(document).on("click", ".drag_drop_questions input", function () {
 
+    var value = jQuery(this).val();
+
+    if (value == "") return;
+
+    var newWord = jQuery(
+        '<div class="draggable_div" style="background-color: transparent;" data-value="' +
+        value +
+        '">' +
+        value +
+        '</div>'
+    );
+
+    jQuery(".drag_drop_options").append(newWord);
+
+    makeWordDraggable(newWord);
+
+    jQuery(this)
+        .val("")
+        .addClass("droppable_div");
+
+});
     
 }
 		
+function makeWordDraggable(wordElement) {
+
+    jQuery(wordElement).draggable({
+        container: jQuery('.activity-content'),
+        revert: true,
+        placeholder: true,
+        droptarget: '.drag_drop_questions input.droppable_div',
+        drop: function(evt, droptarget) {
+
+            jQuery(droptarget).val(evt.target.innerText);
+            jQuery(droptarget).removeClass('droppable_div');
+
+            jQuery(this).remove();
+
+            detectDragend();
+        }
+    });
+
+}

@@ -64,7 +64,7 @@ var fillin_data = {
           "images": ["../images/pages/activities/3-img-2.png","../images/pages/activities/3-img-3.png"],
           "images_name": [],
           "answer": ["John's shoes are as big as Gary's shoes"],
-          "alternateanswer": [[]],
+          "alternateanswer": [["Gary's shoes are as big as John's shoes"]],
           "strictcase": "no", // yes (or) no     
           "strictorder": "yes", // yes (or) no             
           "maxlength": 200,
@@ -80,9 +80,41 @@ var fillin_data = {
           "images": ["../images/pages/activities/3-img-4.png"],
           "images_name": [],
           "answer": ["Jim's hair is as short as Fred's hair"],
-          "alternateanswer": [[]],
+          "alternateanswer": [["Fred's hair is as short as Jim's hair"]],
           "strictcase": "no", // yes (or) no    
           "strictorder": "yes", // yes (or) no              
+          "maxlength": 200,
+          "type": "", // text (or) number
+        },
+         {
+          "singleword": false,
+          "text": "Jill feels sick. <br> Tina feels sick, too.[_]",
+          "textaudios": ["../audios/page_61/under.mp3"],
+          "audio": "",
+          "audioenable": "default", // correct (or) default
+          "title":"",
+          "images": ["../images/pages/activities/3-img-5.png"],
+          "images_name": [],
+          "answer": ["Tina feels as sick as Jill"],
+          "alternateanswer": [["Jill feels as sick as Tina"]],
+          "strictcase": "no", // yes (or) no  
+          "strictorder": "yes", // yes (or) no              
+          "maxlength": 200,
+          "type": "", // text (or) number
+        },
+        {
+          "singleword": false,
+          "text": "The caterpillar is small. <br> The shrimp is small, too. [_]",
+          "textaudios": ["../audios/page_61/under.mp3","../audios/page_61/under.mp3"],
+          "audio": "",
+          "audioenable": "default", // correct (or) default
+          "title":"",
+          "images": ["../images/pages/activities/3-img-6.png","../images/pages/activities/3-img-7.png"],
+          "images_name": [],
+          "answer": ["The shrimp is as small as the caterpillar"],
+          "alternateanswer": [["the caterpillar is as small as The shrimp"]],
+          "strictcase": "no", // yes (or) no     
+          "strictorder": "yes", // yes (or) no             
           "maxlength": 200,
           "type": "", // text (or) number
         },

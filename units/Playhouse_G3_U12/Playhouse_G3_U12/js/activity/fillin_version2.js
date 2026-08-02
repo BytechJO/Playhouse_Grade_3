@@ -1,7 +1,8 @@
 //  ****************************************** //
-//  FillIn - Version no: 1.2
-//  Date updated - June 3, 2020 
-//  Date updated - August 12, 2020 
+//  FillIn - Version no: 2 (adds alternate-answer checking)
+//  If the student's answer doesn't match the primary "answer", it is now
+//  also checked against fDataObj.alternateanswer[cc] (a list of other
+//  equally-correct phrasings) before being marked wrong.
 //  ****************************************** //
 window.FillIn = function(obj, dataObj){    
     ob = obj[0].getElementsByClassName("options");
@@ -21,7 +22,6 @@ FillIn.prototype = {
         this.listen(ob);
     },
     listen:function(ob){
-        var self= this;
         var e = (ob.activity_area); 
         var inputs = e.querySelectorAll('input'); 
         for (var i = 0; i < inputs.length; i++) {
@@ -29,139 +29,122 @@ FillIn.prototype = {
                 $(this).css('color', 'black');
                 console.log($(this).data('type'));
                 var v = this.value;  
-                /*if($(this).data('type') == 'number'){
+                if($(this).data('type') == 'number'){
                     if($.isNumeric(v) === false) {               
                         this.value = this.value.replace(/\D/g, '');           
                     }
-                }*/
-                if(typeof $(this).data('type') != undefined && $(this).data('type')!=null){
-                    var typ = $(this).data('type');
-                    if(typ == 'text'){
-                        $(this).val($(this).val().replace(/[^a-z ]/gi, ''));
-                    }else if(typ == 'number'){
-                        if($.isNumeric(v) === false) {               
-                            this.value = this.value.replace(/\D/g, '');           
-                        }
-                    }
                 }
-                self.showTickCross();
-                document.getElementsByClassName('checkBtn')[0].classList.remove("disabled");
-                document.getElementsByClassName('resetBtn')[0].classList.remove("disabled");      
+                // document.getElementsByClassName('checkBtn')[0].classList.remove("disabled");
+                // document.getElementsByClassName('resetBtn')[0].classList.remove("disabled");      
             });
-        }    
+            
+        }
+    },
+    // NEW helper: checks a typed answer against the primary answer AND
+    // every alternate phrasing listed for that input box
+    isAnswerMatch:function(userVal, correctVal, alternatesForThisBox, _case){
+        if(userVal == correctVal){ return true; }
+
+        if(alternatesForThisBox != undefined && alternatesForThisBox != null && alternatesForThisBox.length > 0){
+            for(var alt = 0; alt < alternatesForThisBox.length; alt++){
+                var altVal = (_case == 'yes') ? alternatesForThisBox[alt] : (alternatesForThisBox[alt]).toLowerCase();
+                altVal = altVal.replace(/\s/g, '');
+                if(userVal == altVal){ return true; }
+            }
+        }
+        return false;
     },
     validate:function(){
-        var self = this;
         var ob = this.ob;
-        var $area = $(ob.activity_area); 
-        self.showTickCross(false);
-        var numOfFillQuestions = $area.find('.que').length;
+        var e = (ob.activity_area); 
+        var elsQue = e.querySelectorAll('.que'); 
+        var numOfFillIns = elsQue.length;
         var allCorrect = false; 
-        var resultArr = []; 
-        $area.find('.que').each(function(){
-            var thisQNum = parseInt($(this).data('qno'));
-            resultArr[thisQNum -1] = 0;
-            var fDataObj = ((ob.data_obj).questions[thisQNum-1]);
+        var resultArr = [];        
+        for (var i = 0; i < elsQue.length; i++) { 
+            resultArr[i] = 0;
+            var fIndx = parseInt(elsQue[i].dataset.qno);
+            var fDataObj = ((ob.data_obj).questions[fIndx-1]);
+            (elsQue[i].querySelector('.tick')).style.display = 'none';
+            (elsQue[i].querySelector('.cross')).style.display = 'none';
             var _case = (fDataObj.strictcase != undefined && fDataObj.strictcase!=null )? (fDataObj.strictcase).toLowerCase():'no';
-            var _validationOrderCase = (fDataObj.strictorder != undefined && fDataObj.strictorder!=null )? (fDataObj.strictorder).toLowerCase():'yes';
+            var _cAns = getStrArray(fDataObj.answer, 'activity');            
             var _uAns = [];
-            var _cAns = getStrArray(fDataObj.answer, 'activity');  
-            var _cAlternateAns = fDataObj.alternateanswer;  
-            var numOfInputs = $(this).find('input').length; 
-            var doneAnswers = [];
-            
-            $(this).find('input').each(function(index){
-                if($(this).attr('readonly') == null && $(this).attr('disabled') == null){
-                    // var thisInd = $(this).index();
-                    var thisInd = index;
-                    _uAns[thisInd] = 0;
-                    var thisVal = "";
-                    if($(this).val().length > 0){
-                        thisVal = (_case == 'yes') ? $.trim($(this).val()) : ($.trim($(this).val())).toLowerCase();
-                    }
-                    if(thisVal != ""){
-                        if(numOfInputs > 1 && _validationOrderCase == 'no'){
-                            
-                            var isInAnswers = ($.inArray(thisVal, _cAns) > -1);
-                            var isAlreadyDone = ($.inArray(thisVal, doneAnswers) > -1);
-                            if(isInAnswers && !isAlreadyDone){
-                                doneAnswers.push(thisVal);
-                                _uAns[thisInd] = 1; 
-                            }
-                        }else{
-                           
-                            if(thisVal == _cAns[thisInd]){
-                                _uAns[thisInd] = 1;
-                            }else{
-                                
-                                var _cAltAns = [];
-                                if(_cAlternateAns != undefined){
-                                    var _cAltAns = [];
-                                    if((fDataObj.alternateanswer[thisInd]) != undefined){
-                                         if((fDataObj.alternateanswer[thisInd]).length > 0){
-                                            _cAltAns = getStrArray(fDataObj.alternateanswer[thisInd], 'activity'); 
-                                        }
-                                    }                                   
-                                    if(_cAltAns.length > 0){
-                                        if($.inArray(thisVal, _cAltAns) > -1){
-                                            _uAns[thisInd] = 1; 
-                                        }else{
-                                            _uAns[thisInd] = 0;
-                                        }
-                                    }else{
-                                        _uAns[thisInd] = 0;
-                                    }
+            var _isReadOnly = [];
+            var _corr = 0;
+            var _wrong = 0;
+            var inputBoxes = elsQue[i].querySelectorAll('input'); 
 
-                                }else{
-                                    _uAns[thisInd] = 0;
-                                }                                              
+            if(inputBoxes.length > 0){
+                for(var a=0;a<inputBoxes.length;a++){
+                    console.log(a, inputBoxes[a].dataset.type);
+                    _isReadOnly[a] = ((inputBoxes[a].getAttribute("disabled")==null)&& (inputBoxes[a].getAttribute("readonly")==null))?0:1;
+                        if((inputBoxes[a].value).length > 0){
+                            if(inputBoxes[a].dataset.type != 'number'){
+                                _uAns[a] = (_case == 'yes')? inputBoxes[a].value:(inputBoxes[a].value).toLowerCase();
+                            }else{
+                                _uAns[a] = inputBoxes[a].value;
                             }
+                            
                         }
-                        
-                        
-                    }                   
                 }
-            });
-            if(((_uAns.join('').split('0'))[0]).length == numOfInputs){
-                resultArr[thisQNum -1] = 1; 
-            }            
-        }); 
-        allCorrect = (((resultArr.join('').split('0'))[0]).length == numOfFillQuestions); 
-        self.showTickCross(true, resultArr);
+            }
+            (elsQue[i].dataset).showIcon = (((_isReadOnly.join('').split('1'))[0]).length == _cAns.length); 
+            console.log(_uAns, _cAns, (((_isReadOnly.join('').split('1'))[0]).length == _cAns.length), i, (elsQue[i].dataset).showIcon);
+          
+            if((_uAns.length>0) && (_cAns.length == _uAns.length)){
+                for(var cc=0;cc<_cAns.length;cc++){                    
+                    _cAns[cc] = (_case == 'yes')? _cAns[cc]: _cAns[cc].toLowerCase();  
+                   _cAns[cc] = (_cAns[cc]).replace(/\s/g, '');
+                   _uAns[cc] = (_uAns[cc]).replace(/\s/g, '');
+
+                    // NEW: pull this box's list of alternate acceptable
+                    // answers (if any) and check it too
+                    var altList = (fDataObj.alternateanswer != undefined && fDataObj.alternateanswer[cc] != undefined)
+                        ? fDataObj.alternateanswer[cc] : [];
+
+                    if(this.isAnswerMatch(_uAns[cc], _cAns[cc], altList, _case)){
+                        _corr++;
+                    }else{
+                        _wrong++;
+                    }
+                } 
+            }else{
+                _wrong++;                  
+            }
+            if(_corr == _uAns.length && _wrong == 0){
+                resultArr[i] = 1;
+                (elsQue[i].querySelector('.tick')).style.display = 'block';                
+                if(fDataObj.audio != '' && fDataObj.audio != 'no' ){   
+                    if(fDataObj.audioenable == 'correct' && ((elsQue[i].querySelectorAll('.audioIcon')).length > 0)) {
+                        (elsQue[i].querySelector('.audioIcon')).classList.remove("disabled");
+                    }              
+                    
+                }
+            }else{
+                resultArr[i] = 0;
+                (elsQue[i].querySelector('.cross')).style.display = 'block';
+                if(fDataObj.audio != '' && fDataObj.audio != 'no'){   
+                    if(fDataObj.audioenable == 'correct' && ((elsQue[i].querySelectorAll('.audioIcon')).length > 0)) {               
+                        (elsQue[i].querySelector('.audioIcon')).classList.add("disabled");
+                    }
+                }
+            }
+            if((elsQue[i].querySelectorAll('.icon_wrap')).length > 0) {
+                if((elsQue[i].dataset).showIcon == "true"){
+                    (elsQue[i].querySelector('.icon_wrap')).style.display = 'block'; 
+                }                
+            }     
+        }
+        console.log(resultArr, numOfFillIns);
+        allCorrect = (((resultArr.join('').split('0'))[0]).length == numOfFillIns); 
         showFeedback(true,allCorrect);
        
         if(allCorrect){
-            document.getElementsByClassName('resetBtn')[0].classList.add("disabled"); 
+            // document.getElementsByClassName('resetBtn')[0].classList.add("disabled"); 
         }        
     },
-    showTickCross:function(aBool, aArr){
-        var ob = this.ob;        
-        var e = (ob.activity_area);
-        var elsQue = e.querySelectorAll('.que');
-        if(!aBool){
-            for (var i = 0; i < elsQue.length; i++) {
-                (elsQue[i].querySelector('.icon_wrap')).style.display = 'none'; 
-                (elsQue[i].querySelector('.tick')).style.display = 'none';
-                (elsQue[i].querySelector('.cross')).style.display = 'none';
-            }  
-        }else{
-            for (var i = 0; i < elsQue.length; i++) {
-                (elsQue[i].querySelector('.icon_wrap')).style.display = 'block';  
-                if(aArr.length > 0){
-                    if(aArr[i] == 1){
-                        (elsQue[i].querySelector('.tick')).style.display = 'block';
-                        (elsQue[i].querySelector('.cross')).style.display = 'none';
-                    } else {
-                        (elsQue[i].querySelector('.tick')).style.display = 'none';
-                         (elsQue[i].querySelector('.cross')).style.display = 'block';
-                    }  
-                }
-            }
-        }
-        
-    },
     reset:function(){
-        var self= this;
         var ob = this.ob;        
         var e = (ob.activity_area);
         var elsQue = e.querySelectorAll('.que');  
@@ -172,7 +155,6 @@ FillIn.prototype = {
             (elsQue[i].querySelector('.icon_wrap')).style.display = 'none'; 
             (elsQue[i].querySelector('.tick')).style.display = 'none';
             (elsQue[i].querySelector('.cross')).style.display = 'none';
-            // console.log('reset function >> ', fIndx, ((ob.data_obj).questions[fIndx-1]));
             if(fDataObj.audio != '' && fDataObj.audio != 'no'){ 
                 if((elsQue[i].querySelectorAll('.audioIcon')).length > 0){
                     if(fDataObj.audioenable == 'correct'){                
@@ -199,8 +181,7 @@ FillIn.prototype = {
             }
 
         }
-        self.showTickCross(false);
-        document.getElementsByClassName('checkBtn')[0].classList.add("disabled");           
+        // document.getElementsByClassName('checkBtn')[0].classList.add("disabled");           
     },
     initialSettings:function(){
         this.reset();

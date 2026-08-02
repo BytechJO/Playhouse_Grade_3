@@ -517,6 +517,11 @@ function setLoadedStatus(val) {
                                 buildLetterPathBody(letterpath_data);
                             }
                             break;
+                             case 'wordsearchwrite':
+                            if (typeof wordsearchwrite_data != undefined && wordsearchwrite_data != null) {
+                                buildWordSearchWriteBody(wordsearchwrite_data);
+                            }
+                            break;
                     }
                 } else {
                     // console.log('no build');
@@ -549,6 +554,8 @@ function setLoadedStatus(val) {
                     case 'wordsearch':
                     case 'linedraw':
                     case 'dragndrop':
+                             case 'wordsearchwrite':
+
                     case 'coloring':
                         callActivityFunctions(_activityData, _actIndx, _fileType, _fileSubType);
                         break;

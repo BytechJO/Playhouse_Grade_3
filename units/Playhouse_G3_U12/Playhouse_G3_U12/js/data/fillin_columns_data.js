@@ -49,6 +49,7 @@ var fillin_data = {
             "audioenable": "default", // correct (or) default
             "image": "",
             "answer": ["A squid is not as cheap as a seahorse"],
+             "alternateanswer": [["A squid is as expensive as a seahorse"]],
             "strictcase": "no", // yes (or) no 
             "type": "text", // text (or) number
         },
@@ -58,6 +59,7 @@ var fillin_data = {
             "audioenable": "default", // correct (or) default
             "image": "",
             "answer": ["A shrimp is not as cheap as a clam"],
+             "alternateanswer": [["A shrimp is as expensive as a clam"]],
             "strictcase": "no", // yes (or) no 
             "type": "text", // text (or) number
         },
