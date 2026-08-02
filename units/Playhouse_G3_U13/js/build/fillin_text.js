@@ -164,7 +164,7 @@ function buildFillInBody(aObj) {
 		htmlStmt += '</div>';
 
 		if(aObj.image != "" && aObj.imageposition == "back"){
-			htmlStmt += '<div class="image-back"><img src="' + aObj.image + '"/></div>';	
+			htmlStmt += '<div class="image-back"><img src="' + aObj.image + '" style="height:290px"/></div>';	
 		}
 
 		htmlStmt += '</div></div></div>'; // end - all_cont / options 

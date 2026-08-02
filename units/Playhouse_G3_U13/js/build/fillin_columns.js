@@ -112,14 +112,88 @@ function buildFillInBody(aObj) {
 			htmlStmt += '</div>';
 		}
 		htmlStmt += '</div>';
-		htmlStmt += '</div></div></div>'; // end - all_cont / options 
 		
+		htmlStmt += '</div></div></div>'; // end - all_cont / options 
+	
+    // ================================================================ [ SentenceBuilding ]
+    htmlStmt += '<div class="SentenceBuilding_container">';
+    htmlStmt += '<div class="cont_items d-flex flex-wrap">';
+    htmlStmt += '<div class="main_title_container">';
+    htmlStmt += '<div class="main_title_text">';
+    if (aObj.main_title_text.length > 1) {
+      for (let x = 0; x < aObj.main_title_text.length; x++) {
+        htmlStmt +=
+          '<div class="audioIcon textEnd off d-flex contant" data-audio="' +
+          aObj.main_title_audio +
+          '">';
+        htmlStmt +=
+          "<div class='letter letter-" +
+          x +
+          " pulse'>" +
+          aObj.main_title_text[x] +
+          "</div>";
+        htmlStmt += "</div>";
+      }
+    } else {
+      htmlStmt += "<div class=''>" + aObj.main_title_text + "</div>";
+    }
+    htmlStmt += "</div>";
+    htmlStmt += "</div>";
+
+    htmlStmt +=
+      '<div class="d-flex flex-wrap justify-content-between" style="width:100%">';
+    for (let i = 0; i < aObj.items.length; i++) {
+      if (i == 0) {
+        htmlStmt += '<div class="d-flex imgs_sides" >';
+        htmlStmt +=
+          "<img src='" +
+          aObj.items[i].text_img +
+          "' class='readHighlightsBtn imgToggle' data-img='showImg1'>";
+        htmlStmt +=
+          "<img src='" +
+          aObj.items[i].img +
+          "' class='text_img showImg1 audioIcon off' data-audio='" +
+          aObj.items[i].audio +
+          "'>";
+        htmlStmt += "</div>";
+      } else if (i == 1) {
+        htmlStmt += '<div class="middle-text">';
+        htmlStmt +=
+          "<span class='text audioIcon off' data-audio='" +
+          aObj.items[i].audio +
+          "'>" +
+          aObj.items[i].text +
+          "</span>";
+        htmlStmt += "</div>";
+      } else if (i == 2) {
+        htmlStmt += '<div class="d-flex imgs_sides">';
+        
+        htmlStmt += "</div>";
+      }
+    }
+    htmlStmt += "</div>";
+    htmlStmt += "</div>";
+    htmlStmt += "</div>";
+    // ================================================================ [ / SentenceBuilding ]
+
 	}
 	console.log('htmlStmt >> fillin Built');
 	$( ".activity_area" ).append( htmlStmt );	
-	
+	showSentenceImg()
 	setLoadedStatus(getCurrFileOrDirectory('file'));
 }
 function nextChar(c) {
 	return String.fromCharCode(c.charCodeAt(0) + 1);
 }  
+
+
+function showSentenceImg(){
+    $(document).ready(function () {
+        $(".imgToggle").click(
+            function () {
+            var imgName = $(this).data("img");
+            $('.'+imgName).fadeToggle(1000);
+        }
+        );
+    });
+}

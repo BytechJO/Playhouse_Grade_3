@@ -89,6 +89,24 @@ var _activityData = {
          'layout'             : 3,
          'visited'            : 0,
       },
+       {
+         'file'               : 'tickimageitems.html',
+         'type'               : 'tickimageitems',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no
+         'activityCtrls'      : 'yes',
+         'layout'             : 3,
+         'visited'            : 0,
+      },
+       {
+         'file'               : 'circlecorrectpic.html',
+         'type'               : 'circlecorrectpic',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no
+         'activityCtrls'      : 'yes',
+         'layout'             : 3,
+         'visited'            : 0,
+      },
       //tick image
       //multiple choice
       {

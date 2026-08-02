@@ -4,12 +4,31 @@
 var _activityData = {
    "list": [
       {
+         "file"               : "index_matchsimple.html",
+         'type'               : 'matchsimple',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+      {
          "file"               : "fillin_text_in_sentences_2.html",
          'type'               : 'fillin',
          'subtype'            : '',
          'build'              : 'yes', // yes (or) no   
          'activityCtrls'      : 'yes',
          'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+        {
+         'file'               : 'circlecolour.html',
+         'type'               : 'circlecolour',            
+         'build'              : 'yes', // yes (or) no
+         'activityCtrls'      : 'yes',
+         'layout'             : 1,
          'visited'            : 0,
          'score'              : 0,
       },

@@ -6,6 +6,7 @@
     width: 100%;
     position: absolute;
     top: 54px;
+    left: 33px;
 }
 
 .ss_text {
@@ -153,6 +154,7 @@
 
 .snap_group_all .row {
     text-align: left;
+    width: 85%;
     min-height: 36px;
 }
 

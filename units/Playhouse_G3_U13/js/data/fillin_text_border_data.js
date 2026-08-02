@@ -44,7 +44,7 @@ var fillin_data = {
           "audio": "",
           "audioenable": "default", // correct (or) default
           "title":"",
-          "images": ["../images/pages/activities/3-img-1.png","../images/pages/activities/3-img-2.png"],
+          "images": ["../images/pages/activities/img1_01.jpg","../images/pages/activities/img1_02.jpg"],
           "images_name": [],
           "answer": ["The teacher","read a story"],
           "alternateanswer": [[]],
@@ -60,7 +60,7 @@ var fillin_data = {
           "audio": "",
           "audioenable": "default", // correct (or) default
           "title":"",
-          "images": ["../images/pages/activities/3-img-3.png","../images/pages/activities/3-img-4.png"],
+          "images": ["../images/pages/activities/img1_03.jpg","../images/pages/activities/img1_04.png"],
           "images_name": [],
           "answer": ["Marci and Jeff are going to go on holiday"],
           "alternateanswer": [[]],
@@ -76,7 +76,7 @@ var fillin_data = {
           "audio": "",
           "audioenable": "default", // correct (or) default
           "title":"",
-          "images": ["../images/pages/activities/3-img-5.png", "../images/pages/activities/3-img-6.png"],
+          "images": ["../images/pages/activities/img1_05.jpg", "../images/pages/activities/img1_06.jpg"],
           "images_name": [],
           "answer": ["Wes is going to play basketball"],
           "alternateanswer": [[]],
