@@ -50,7 +50,7 @@ var fillin_data = {
         "alternateanswer": [[]],
         "strictcase": "no", // yes (or) no  
         "strictorder": "yes", // yes (or) no              
-        "maxlength": 10,
+        "maxlength": 1,
         "type": "text", // text (or) number
       },
       {
@@ -66,7 +66,7 @@ var fillin_data = {
         "alternateanswer": [[]],
         "strictcase": "no", // yes (or) no     
         "strictorder": "yes", // yes (or) no             
-        "maxlength": 10,
+        "maxlength": 1,
         "type": "text", // text (or) number
       },
       {
@@ -82,7 +82,7 @@ var fillin_data = {
         "alternateanswer": [[]],
         "strictcase": "no", // yes (or) no    
         "strictorder": "yes", // yes (or) no              
-        "maxlength": 10,
+        "maxlength": 1,
         "type": "text", // text (or) number
       },
       {
@@ -98,27 +98,51 @@ var fillin_data = {
         "alternateanswer": [[]],
         "strictcase": "no", // yes (or) no    
         "strictorder": "yes", // yes (or) no              
-        "maxlength": 10,
+        "maxlength": 1,
         "type": "text", // text (or) number
       },
     
     ],
-    "main_title_text":["S","e","n","t","e","n","c","e","&nbsp;","B","u","i","l","d","i","n","g"],
-    "items":
-        [
-          "<img src='../images/pages/sb-icons/phonics_main_title_icon.png' class='readHighlightsBtn imgToggle' data-img='showImg1'>",
-          "<img src='../images/pages/page-3/Sen-2-img.png' class='text_img showImg1'>",
-         
-          "<span class='text'>"+
+   main_title_text: [
+    "S",
+    "e",
+    "n",
+    "t",
+    "e",
+    "n",
+    "c",
+    "e",
+    "&nbsp;",
+    "B",
+    "u",
+    "i",
+    "l",
+    "d",
+    "i",
+    "n",
+    "g",
+  ],
+  main_title_audio: "../audios/page_137/Sentence_Building_01.mp3",
+  items: [
+    {
+      img: "../images/pages/page-3/Sen-2-img.png",
+      text_img: "../images/pages/sb-icons/phonics_main_title_icon.png",
+      audio: "../audios/page_137/3_01.mp3",
+    },
+    {
+      img: "",
+      text: "<span class='text'>"+
           "Abbreviations for kinds of streets: <br>"+
           "Street &rarr; <span class='orange_text'>St</span> &nbsp; Lane &rarr; <span class='orange_text'>Ln</span> <br>"+
           "Avenue &rarr; <span class='orange_text'>Ave</span> &nbsp; Route &rarr; <span class='orange_text'>Rt</span> <br>"+
           "Road &rarr; <span class='orange_text'>Rd</span> &nbsp; Drive &rarr; <span class='orange_text'>Or</span> <br>"+
           "</span>",
-          // "<img src='../images/pages/page-3/Sen-0-img.png' class='text_img showImg0'>",
-
-          "<img src='../images/pages/page-3/Sen-3-img.png' class='text_img showImg2'>",
-          "<img src='../images/pages/sb-icons/phonics_main_title_icon.png' class='readHighlightsBtn imgToggle' data-img='showImg2'>",
-        
-        ],
+      audio: "../audios/page_137/3_03.mp3",
+    },
+    {
+      img: "../images/pages/page-3/Sen-3-img.png",
+      text_img: "../images/pages/sb-icons/phonics_main_title_icon.png",
+      audio: "../audios/page_137/3_02.mp3",
+    },
+  ],
   }

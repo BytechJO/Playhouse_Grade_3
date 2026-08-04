@@ -79,9 +79,9 @@ function buildFillInBody(aObj) {
 				htmlStmt += '<div class="txt_wrap  align-content-between flex-wrap justify-content-center">';
 				var inputboxstmt = '<input type="text" maxlength="300"/>';
 				console.log("aObj.defaultAnswer", aObj.defaultAnswer, currentQue);
-				if (aObj.defaultAnswer == currentQue) {
-					inputboxstmt = '<input type="text" maxlength="1" readonly value="' + ((aObj.questions)[currentQue - 1]).answer[0] + '"/>'
-				}
+				// if (aObj.defaultAnswer == currentQue) {
+				// 	inputboxstmt = '<input type="text" maxlength="1" readonly value="' + ((aObj.questions)[currentQue - 1]).answer[0] + '"/>'
+				// }
 				
 				var textFront = ((aObj.questions)[currentQue - 1]).textfront;
 				var array_images = ((aObj.questions)[currentQue - 1]).array_images;

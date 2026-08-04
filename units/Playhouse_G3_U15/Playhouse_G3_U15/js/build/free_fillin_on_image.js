@@ -77,7 +77,7 @@ function buildFillInBody(aObj) {
 				if (tmpObj.singleword) {
 				  var str = tmpObj.text; 
 				  var qStr = '<div class="audioIcon txt-audioIcon off d-flex contant min_w_fit_contant" data-audio="' + tmpObj.textaudios[0] + '">' + '<img src="../images/icons/sound-wave.png" class="audio_icon">' + '</div>'
-				  qStr += str.replace(/\[_]/g, '<input class="text_input_area" type="number" maxlength="' + tmpObj.maxlength + '" data-type="' + tmpObj.type + '">');
+				  qStr += str.replace(/\[_]/g, '<input class="text_input_area" type="number" maxlength="1" data-type="' + tmpObj.type + '">');
 				} else {
 				  var wordIndex = -1;
 				  words = tmpObj.text.split('[_]')
@@ -86,7 +86,7 @@ function buildFillInBody(aObj) {
 					  wordIndex++;
 					  return '<div class="audioIcon txt-audioIcon off d-flex contant min_w_fit_contant" data-audio="' + tmpObj.textaudios[wordIndex] + '">' + word + '</div>'
 					}
-				  }).join('<input class="text_input_area" type="number" maxlength="' + tmpObj.maxlength + '" data-type="' + tmpObj.type + '">');
+				  }).join('<input class="text_input_area" type="number" maxlength="1" data-type="' + tmpObj.type + '">');
 				}
 				
 				htmlStmt += '<div class="fillin_gr d-flex align-items-center">';

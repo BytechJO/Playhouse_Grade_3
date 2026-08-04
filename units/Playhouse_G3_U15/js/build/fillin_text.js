@@ -53,7 +53,7 @@ function buildFillInBody(aObj) {
 		htmlStmt += '</div>';
 		htmlStmt += '</div>';
         // ===================================================================== all_cont =====================
-		htmlStmt += '<div class="options cont_ht_sf mx-auto">';
+		htmlStmt += '<div class="options mx-auto">';
 		htmlStmt += '<div class="all_cont justify-content-start justify-content-sm-center">';
 		// options
 		if (typeof aObj.options != undefined && aObj.options != null) {
@@ -71,7 +71,7 @@ function buildFillInBody(aObj) {
 		}
 		// ===========================================================
 		htmlStmt += '<div class="screen_elements d-flex justify-content-center align-items-center h-100">';
-		htmlStmt += '<div class="group_elm d-flex flex-wrap '+aObj.parentClassName+'">';
+		htmlStmt += '<div class="group_elm d-flex '+aObj.parentClassName+'">';
 		
 			if(aObj.image != 'no' && aObj.image != ""){
 				if(aObj.imageposition == 'front'){

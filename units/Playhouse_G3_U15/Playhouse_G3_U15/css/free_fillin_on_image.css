@@ -154,23 +154,23 @@ input[type=number] {
 }
 
 .que[data-qno="1"]{
-    top: 95px;
-    left: 412px;
+  top: 16%;
+    left: 36%;
 }
 
 .que[data-qno="2"]{
-    top: 57px;
-    left: 814px;
+top: 9%;
+    left: 59%;
 }
 
 .que[data-qno="3"]{
-    top: 97px;
-    left: 924px;
+      top: 19%;
+    left: 64%;
 }
 
 .que[data-qno="4"]{
-    top: 378px;
-    left: 760px;
+       top: 76%;
+    left: 55%;
 }
 
 /* .que[data-qno="13"] {

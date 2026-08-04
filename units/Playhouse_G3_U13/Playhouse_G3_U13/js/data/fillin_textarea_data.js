@@ -24,7 +24,7 @@ var fillin_data = {
     "numinrow": [
         [1, 1],
     ],
-    "mainTitle"             : "../images/pages/sb-icons/word_main_title.png",
+    "mainTitle"             : "../images/pages/sb-icons/WRITING.jpg",
     "mainTitleIcon"         : "../images/pages/sb-icons/word_main_title_icon.png",
     "mainTitleIconPos"      : {"right": "-18px"},
     "mainTitleAudio"        : "../audios/page_68/WRITING.mp3",

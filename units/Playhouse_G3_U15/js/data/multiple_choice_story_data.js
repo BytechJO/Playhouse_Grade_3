@@ -25,7 +25,7 @@ var mcq_data = {
     "mainTitleIcon"         : "../images/pages/sb-icons/phonics_main_title_icon.png",
     "mainTitleIconPos"      : {"right": "-20px"},
     "mainTitleAudio"        : "../audios/page_137/PHONICS.mp3",
-    "subTitleTextLeft"      : "<span class='orange_text'>1</span>  Circle the ‘<span class='orange_text'>st</span>’ words in the poem.",
+    "subTitleTextLeft"      : "<span class='orange_text'>2</span>  Circle the ‘<span class='orange_text'>st</span>’ words in the poem.",
     "subTitleTextRight"     : "",
     "subTitleTextRight"     : "",
     "subTitleIcons"         : [],

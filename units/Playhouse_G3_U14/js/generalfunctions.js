@@ -519,6 +519,16 @@ function setLoadedStatus(val) {
                                 buildLetterPathBody(letterpath_data);
                             }
                             break;
+                            case 'practise':
+                            if (typeof practise_data != undefined && practise_data != null) {
+                                buildPractiseBody(practise_data);
+                            }
+                            break;
+                             case 'writecircle':
+                            if (typeof writecircle_data != undefined && writecircle_data != null) {
+                                buildWriteCircleBody(writecircle_data);
+                            }
+                            break;
                     }
                 } else {
                     // console.log('no build');
@@ -552,6 +562,8 @@ function setLoadedStatus(val) {
                     case 'linedraw':
                     case 'dragndrop':
                     case 'coloring':
+                    case 'writecircle':
+                    case 'practise':
                         callActivityFunctions(_activityData, _actIndx, _fileType, _fileSubType);
                         break;
                     default:

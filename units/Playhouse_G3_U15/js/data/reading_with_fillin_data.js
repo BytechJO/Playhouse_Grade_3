@@ -24,7 +24,7 @@ var fillin_data = {
   "mainTitle"             : "../images/icons/writing.png",
   "mainTitleIcon"         : "../images/pages/sb-icons/phonics_3_icon.png",
   "mainTitleIconPos"      : {"right": "90px"},
-  "mainTitleAudio"        : "../audios/under.mp3",
+  "mainTitleAudio"        : "../audios/new/WRITING.mp3",
   "subTitleTextLeft"      : "<span class='orange_text'>1</span> How does Jenny get to Lilly’s house?",
   "subTitleTextRight"     : "",
   "subTitleIcons"         : ["../images/pages/sb-icons/phonics_3_icon.png"],

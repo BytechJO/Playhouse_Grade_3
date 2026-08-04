@@ -208,3 +208,118 @@
 .reading_slide .q_background_img{
     height: 620px !important;
 }
+
+/* ---- book page background (your real image) ---- */
+.speech_bubbles_page{
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.speech_bubbles_bg{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---- speech bubble text boxes ---- */
+.speech_bubble{
+    position: absolute;
+    background: #f2f2f2;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 14px 18px;
+    box-sizing: border-box;
+}
+
+.bubble_text{
+    font-family: Arcon;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+}
+
+/* the little pointed tail on the bubble, positioned per bubble via tailSide */
+.speech_bubble::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+}
+
+.speech_bubble.tail_bottom-left::after{
+    bottom: -20px;
+    left: 24px;
+    border-top-color: #333;
+    border-bottom: 0;
+}
+.speech_bubble.tail_bottom-left::before{
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 26px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #f2f2f2;
+    border-bottom: 0;
+    z-index: 1;
+}
+
+.speech_bubble.tail_top-right::after{
+    top: -20px;
+    right: 24px;
+    border-bottom-color: #333;
+    border-top: 0;
+}
+.speech_bubble.tail_top-right::before{
+    content: "";
+    position: absolute;
+    top: -16px;
+    right: 26px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #f2f2f2;
+    border-top: 0;
+    z-index: 1;
+}
+
+/* ---- character avatar + name, positioned independently of the bubble ---- */
+.speech_avatar_group{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.speech_avatar_img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.speech_avatar_name{
+    font-family: Arcon;
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+    margin-top: 4px;
+}
+
+/* ************************************************* */
+@media (max-width: 767.98px){
+    .bubble_text{
+        font-size: 12px;
+    }
+    .speech_avatar_img{
+        width: 50px;
+        height: 50px;
+    }
+}

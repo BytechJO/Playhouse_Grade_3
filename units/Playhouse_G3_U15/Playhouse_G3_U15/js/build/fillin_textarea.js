@@ -44,6 +44,9 @@
     // ============== ****  **** ==============  
 
                 htmlStmt += '<div class="options">';
+                htmlStmt += '<div class="d-flex justify-content-center " >';
+                htmlStmt += '<img src="' + aObj.backgroundImage + '"/>';
+                htmlStmt += '</div>';
                 
                 htmlStmt += '<div class="textarea-container">';
                     htmlStmt += ' <textarea id="paper-textarea" rows="10" cols="50" maxlength="400"></textarea>';

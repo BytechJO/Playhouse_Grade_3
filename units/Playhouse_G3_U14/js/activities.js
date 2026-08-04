@@ -229,7 +229,11 @@ function initiateActivityType(aActTyp, aActSubType) {
         theActivity = new DragAndDrop(quePart, dragndrop_data);
     } else if (aActTyp == 'coloring') {
         theActivity = new Coloring(quePart, coloring_data);
-    } else if (aActTyp == 'standAlone') {
+    }  else if (aActTyp == 'practise') {
+        theActivity = new Practise(quePart, practise_data);
+    }  else if (aActTyp == 'writecircle') {
+        theActivity = new WriteCircle(quePart, writecircle_data);
+    }else if (aActTyp == 'standAlone') {
         theActivity = "standAlone";
 
     } else {

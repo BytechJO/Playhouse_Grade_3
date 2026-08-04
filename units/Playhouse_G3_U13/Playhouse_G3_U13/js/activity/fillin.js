@@ -58,7 +58,10 @@ FillIn.prototype = {
             var _corr = 0;
             var _wrong = 0;
             var inputBoxes = elsQue[i].querySelectorAll('input'); 
-
+if (inputBoxes.length === 0) {
+    resultArr[i] = 1;
+    continue;
+}
             if(inputBoxes.length > 0){
                 for(var a=0;a<inputBoxes.length;a++){
                     console.log(a, inputBoxes[a].dataset.type);
@@ -81,6 +84,10 @@ FillIn.prototype = {
             
            
             if((_uAns.length>0) && (_cAns.length == _uAns.length)){
+                console.log(_cAns);
+console.log(_uAns);
+console.log(inputBoxes.length);
+console.log(_cAns.length);
                 for(var cc=0;cc<_cAns.length;cc++){                    
                     _cAns[cc] = (_case == 'yes')? _cAns[cc]: _cAns[cc].toLowerCase();  
                    _cAns[cc] = (_cAns[cc]).replace(/\s/g, '');

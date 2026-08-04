@@ -46,18 +46,29 @@ FillIn.prototype = {
         var allCorrect = false; 
         var resultArr = [];        
         for (var i = 0; i < elsQue.length; i++) { 
-            resultArr[i] = 0;
-            var fIndx = parseInt(elsQue[i].dataset.qno);
-            var fDataObj = ((ob.data_obj).questions[fIndx-1]);
-            (elsQue[i].querySelector('.tick')).style.display = 'none';
-            (elsQue[i].querySelector('.cross')).style.display = 'none';
-            var _case = (fDataObj.strictcase != undefined && fDataObj.strictcase!=null )? (fDataObj.strictcase).toLowerCase():'no';
-            var _cAns = getStrArray(fDataObj.answer, 'activity');            
-            var _uAns = [];
-            var _isReadOnly = [];
-            var _corr = 0;
-            var _wrong = 0;
-            var inputBoxes = elsQue[i].querySelectorAll('input'); 
+               resultArr[i] = 0;
+    var fIndx = parseInt(elsQue[i].dataset.qno);
+    var fDataObj = ((ob.data_obj).questions[fIndx-1]);
+    (elsQue[i].querySelector('.tick')).style.display = 'none';
+    (elsQue[i].querySelector('.cross')).style.display = 'none';
+
+    // NEW: a question with no [_] in its text has no <input> at all -
+    // there's nothing to validate, so treat it as automatically correct
+    // and never show a tick/cross for it (matches the earlier fix for
+    // the same issue in a different FillIn activity).
+    var inputBoxesCheck = elsQue[i].querySelectorAll('input');
+    if(inputBoxesCheck.length == 0){
+        resultArr[i] = 1;
+        continue;
+    }
+
+    var _case = (fDataObj.strictcase != undefined && fDataObj.strictcase!=null )? (fDataObj.strictcase).toLowerCase():'no';
+    var _cAns = getStrArray(fDataObj.answer, 'activity');            
+    var _uAns = [];
+    var _isReadOnly = [];
+    var _corr = 0;
+    var _wrong = 0;
+    var inputBoxes = elsQue[i].querySelectorAll('input');
 
             if(inputBoxes.length > 0){
                 for(var a=0;a<inputBoxes.length;a++){

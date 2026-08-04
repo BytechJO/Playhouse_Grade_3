@@ -12,15 +12,15 @@ var _activityData = {
          'visited'            : 0,
          'score'              : 0,
       },
-      {
-         'file'               : 'multiple_choice_2.html',
-         'type'               : 'mcq',
-         'build'              : 'yes', // yes (or) no
-         'activityCtrls'      : 'yes',
-         'layout'             : 1,
-         'visited'            : 0,
-         'score'              : 0,
-      },
+      // {
+      //    'file'               : 'multiple_choice_2.html',
+      //    'type'               : 'mcq',
+      //    'build'              : 'yes', // yes (or) no
+      //    'activityCtrls'      : 'yes',
+      //    'layout'             : 1,
+      //    'visited'            : 0,
+      //    'score'              : 0,
+      // },
       {
          'file'               : 'slide_remember.html',
          'type'               : 'standAlone',
@@ -53,6 +53,16 @@ var _activityData = {
       {
          "file"               : "fillin_text_2.html",
          'type'               : 'fillin',
+         'subtype'            : '',
+         'build'              : 'yes', // yes (or) no   
+         'activityCtrls'      : 'yes',
+         'layout'             : 2,
+         'visited'            : 0,
+         'score'              : 0,
+      },
+      {
+         "file"               : "index_wordsearchwrite.html",
+         'type'               : 'wordsearchwrite',
          'subtype'            : '',
          'build'              : 'yes', // yes (or) no   
          'activityCtrls'      : 'yes',

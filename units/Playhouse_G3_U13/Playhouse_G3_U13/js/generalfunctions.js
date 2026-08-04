@@ -52,6 +52,7 @@ function getThisFileName(aPath) {
 function getStrArray(str, pos) {
     var arr = [];
     var arrIndx = 0;
+    
     if (str != null) {
         str = ((str).toString()).split(',');
         for (var i = 0; i < str.length; i++) {
@@ -516,6 +517,11 @@ function setLoadedStatus(val) {
                             if (typeof letterpath_data != undefined && letterpath_data != null) {
                                 buildLetterPathBody(letterpath_data);
                             }
+                            break;    
+                                 case 'wordsearchwrite':
+                            if (typeof wordsearchwrite_data != undefined && wordsearchwrite_data != null) {
+                                buildWordSearchWriteBody(wordsearchwrite_data);
+                            }
                             break;
                     }
                 } else {
@@ -550,6 +556,8 @@ function setLoadedStatus(val) {
                     case 'linedraw':
                     case 'dragndrop':
                     case 'coloring':
+                                 case 'wordsearchwrite':
+
                         callActivityFunctions(_activityData, _actIndx, _fileType, _fileSubType);
                         break;
                     default:

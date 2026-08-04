@@ -221,7 +221,7 @@
 
 .drag_drop_questions img {
   width: 160px;
-  height: 180px;
+  /* height: 180px; */
   object-fit: contain;
 }
 
