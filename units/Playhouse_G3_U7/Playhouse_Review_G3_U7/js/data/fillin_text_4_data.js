@@ -38,7 +38,7 @@ var fillin_data = {
           "audio": "",
           "audioenable": "default", // correct (or) default
           "image": "../images/pages/activities/Asset_9.png",
-          "answer": ["loud"],
+          "answer": ["shout"],
           "alternateanswer": [[]],
           "strictcase": "no", // yes (or) no     
           "strictorder": "yes", // yes (or) no             

@@ -12,15 +12,15 @@ var _activityData = {
          'layout': 3,
          'visited': 0,
       },
-      {
-         'file': 'WB_G3_U1_Q1_sec2.html',
-         'type': 'fillin',
-         'subtype': '',
-         'build': 'yes', // yes (or) no
-         'activityCtrls': 'yes',
-         'layout': 3,
-         'visited': 0,
-      },
+      // {
+      //    'file': 'WB_G3_U1_Q1_sec2.html',
+      //    'type': 'fillin',
+      //    'subtype': '',
+      //    'build': 'yes', // yes (or) no
+      //    'activityCtrls': 'yes',
+      //    'layout': 3,
+      //    'visited': 0,
+      // },
       {
          'file': 'WB_G3_U1_Q2.html',
          'type': 'mcq',

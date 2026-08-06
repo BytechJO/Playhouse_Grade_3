@@ -35,7 +35,7 @@ var mcq_data = {
           "<img src='../images/pages/activities/Asset_27.png' height='150px'/><p>good</p>",
         ],
       ],
-      answer: [1, 2, 3, 5],
+      answer: [1, 2, 3, 5,6],
       inputbox: "no",
       image: "",
       audio: "",

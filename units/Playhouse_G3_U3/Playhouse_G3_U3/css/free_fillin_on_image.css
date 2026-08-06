@@ -17,7 +17,7 @@
 }
 
 .q_image {
-  height: 100%;
+  height: 500px;
 }
 
 .q_image img {
@@ -129,53 +129,53 @@
 }
 
 .que[data-qno="13"] {
-  top: 11%;
-  left: 33%;
+  top: 28%;
+    left: 36%;
 }
 
 .que[data-qno="14"] {
   top: 0%;
-  left: 43%;
+  left: 47%;
 }
 
 .que[data-qno="15"] {
-  top: 33%;
+     top: 54%;
   left: 0%;
 }
 
 .que[data-qno="16"] {
-  top: 29%;
-  left: 15%;
+top: 54%;
+    left: 16%;
 }
 
 .que[data-qno="17"] {
-  top: 32%;
-  left: 43%;
+    top: 53%;
+    left: 49%;
 }
 
 .que[data-qno="18"] {
-  top: 61%;
+      top: 104%;
   left: 0%;
 }
 
 .que[data-qno="19"] {
-  top: 87%;
-  left: 15%;
+    top: 145%;
+    left: 18%;
 }
 
 .que[data-qno="20"] {
-  top: 60%;
-  left: 22%;
+    top: 106%;
+    left: 25%;
 }
 
 .que[data-qno="21"] {
-  top: 60%;
-  left: 36%;
+    top: 105%;
+    left: 41%;
 }
 
 .que[data-qno="22"] {
-  top: 57%;
-  left: 49%;
+    top: 99%;
+    left: 55%;
 }
 
 /* ************************************************* */

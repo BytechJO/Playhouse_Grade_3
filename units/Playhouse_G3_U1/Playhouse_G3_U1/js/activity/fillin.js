@@ -60,28 +60,30 @@ FillIn.prototype = {
         var pool = [];     // {value, used} - correct answers available in this column
         var userVals = []; // {idx, value} - boxes the student can still edit
 
-        for (var k = 0; k < idxs.length; k++) {
-            var qi = idxs[k];
-            var fIndx = parseInt(elsQue[qi].dataset.qno);
-            var fDataObj = (ob.data_obj).questions[fIndx-1];
-            var _case = (fDataObj.strictcase != undefined && fDataObj.strictcase != null) ? (fDataObj.strictcase).toLowerCase() : 'no';
-            var correctAns = getStrArray(fDataObj.answer, 'activity')[0];
-            correctAns = (_case == 'yes') ? correctAns : correctAns.toLowerCase();
-            correctAns = correctAns.replace(/\s/g, '');
+      for (var k = 0; k < idxs.length; k++) {
+    var qi = idxs[k];
+    var fIndx = parseInt(elsQue[qi].dataset.qno);
+    var fDataObj = (ob.data_obj).questions[fIndx-1];
+    var _case = (fDataObj.strictcase != undefined && fDataObj.strictcase != null) ? (fDataObj.strictcase).toLowerCase() : 'no';
+    var correctAns = getStrArray(fDataObj.answer, 'activity')[0];
+    correctAns = (_case == 'yes') ? correctAns : correctAns.toLowerCase();
+    correctAns = correctAns.replace(/\s/g, '');
+    correctAns = correctAns.replace(/[.,!?;:]/g, ''); // NEW: ignore periods and commas in the stored correct answer
 
-            var input = elsQue[qi].querySelector('input');
-            var isReadOnly = ((input.getAttribute("disabled")==null) && (input.getAttribute("readonly")==null)) ? 0 : 1;
+    var input = elsQue[qi].querySelector('input');
+    var isReadOnly = ((input.getAttribute("disabled")==null) && (input.getAttribute("readonly")==null)) ? 0 : 1;
 
-            if (isReadOnly == 1) {
-                isCorrect[qi] = true;
-                pool.push({value: correctAns, used: true}); // already shown, remove from pool
-            } else {
-                pool.push({value: correctAns, used: false});
-                var uVal = input.value;
-                uVal = (uVal.length > 0) ? ((_case == 'yes') ? uVal : uVal.toLowerCase()).replace(/\s/g, '') : '';
-                userVals.push({idx: qi, value: uVal});
-            }
-        }
+    if (isReadOnly == 1) {
+        isCorrect[qi] = true;
+        pool.push({value: correctAns, used: true});
+    } else {
+        pool.push({value: correctAns, used: false});
+        var uVal = input.value;
+        uVal = (uVal.length > 0) ? ((_case == 'yes') ? uVal : uVal.toLowerCase()).replace(/\s/g, '') : '';
+        uVal = uVal.replace(/[.,]/g, ''); // NEW: ignore periods and commas typed by the student
+        userVals.push({idx: qi, value: uVal});
+    }
+}
 
         // match each typed answer against any still-available correct answer in the column
         for (var u = 0; u < userVals.length; u++) {

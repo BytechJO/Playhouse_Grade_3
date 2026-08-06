@@ -1,9 +1,6 @@
 //  ****************************************** //
 //  FillIn - Version no: 1
 //  Date updated - June 3, 2020 
-//  Fix: تجاهل الأسئلة اللي answer فيها مصفوفة فاضية []
-//       (جمل كاملة بدون فراغ للتعبئة) من عملية التصحيح
-//       بحيث ما تنعتبر "غلط" دايمًا حتى لو المستخدم كتب فيها نص
 //  ****************************************** //
 window.FillIn = function(obj, dataObj){    
     ob = obj[0].getElementsByClassName("options");
@@ -28,15 +25,15 @@ FillIn.prototype = {
         for (var i = 0; i < inputs.length; i++) {
             inputs[i].addEventListener("input", function(){                  
                 $(this).css('color', 'black');
-              
+                console.log($(this).data('type'));
                 var v = this.value;  
                 if($(this).data('type') == 'number'){
                     if($.isNumeric(v) === false) {               
                         this.value = this.value.replace(/\D/g, '');           
                     }
                 }
-                document.getElementsByClassName('checkBtn')[0].classList.remove("disabled");
-                document.getElementsByClassName('resetBtn')[0].classList.remove("disabled");      
+                // document.getElementsByClassName('checkBtn')[0].classList.remove("disabled");
+                // document.getElementsByClassName('resetBtn')[0].classList.remove("disabled");      
             });
             
         }
@@ -61,26 +58,6 @@ FillIn.prototype = {
             var _corr = 0;
             var _wrong = 0;
             var inputBoxes = elsQue[i].querySelectorAll('input'); 
-
-            // ==========================================================
-            // ✅ FIX: إذا السؤال ما عنده إجابة متوقعة (answer: [])
-            // يعني جملة جاهزة/ثابتة بدون فراغ فعلي للتعبئة —
-            // اعتبره صحيح تلقائيًا وما تدخله بعملية المقارنة إطلاقًا
-            // ==========================================================
-            if (_cAns.length === 0) {
-                resultArr[i] = 1;
-                (elsQue[i].querySelector('.tick')).style.display = 'block';
-                if (fDataObj.audio != '' && fDataObj.audio != 'no') {
-                    if (fDataObj.audioenable == 'correct' && ((elsQue[i].querySelectorAll('.audioIcon')).length > 0)) {
-                        (elsQue[i].querySelector('.audioIcon')).classList.remove("disabled");
-                    }
-                }
-                (elsQue[i].dataset).showIcon = true;
-                if ((elsQue[i].querySelectorAll('.icon_wrap')).length > 0) {
-                    (elsQue[i].querySelector('.icon_wrap')).style.display = 'block';
-                }
-                continue; // ننتقل للسؤال يلي بعده، منتجاهل باقي منطق المقارنة
-            }
 
             if(inputBoxes.length > 0){
                 for(var a=0;a<inputBoxes.length;a++){
@@ -153,7 +130,7 @@ FillIn.prototype = {
         showFeedback(true,allCorrect);
        
         if(allCorrect){
-            document.getElementsByClassName('resetBtn')[0].classList.add("disabled"); 
+            // document.getElementsByClassName('resetBtn')[0].classList.add("disabled"); 
         }        
     },
     reset:function(){
@@ -194,7 +171,7 @@ FillIn.prototype = {
             }
 
         }
-        document.getElementsByClassName('checkBtn')[0].classList.add("disabled");           
+        // document.getElementsByClassName('checkBtn')[0].classList.add("disabled");           
     },
     initialSettings:function(){
         this.reset();

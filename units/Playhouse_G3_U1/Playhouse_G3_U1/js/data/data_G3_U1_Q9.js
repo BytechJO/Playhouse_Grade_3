@@ -44,7 +44,7 @@ var fillin_data = {
         "audio": "../audios/page_7/across_.mp3",
         "audioenable": "default", // correct (or) default
         "image": "../images/pages/activities/AGW_U15_P147_I1.png",
-        "answer": ["Sasha is from Russia. She is Russian."],
+        "answer": ["Sasha is from Russia. She is Russian"],
         "alternateanswer": [[]],
         "strictcase": "no", // yes (or) no  
         "strictorder": "yes", // yes (or) no              
@@ -53,11 +53,11 @@ var fillin_data = {
       },
       {
         "textfronttt": "",
-        "textbackkk": "2 &nbsp; Raji is from india. He is indian",
+        "textbackkk": "2 &nbsp; Raji is from india. He is indian.",
         "audio": "../audios/page_7/across_.mp3",
         "audioenable": "default", // correct (or) default
         "image": "../images/pages/activities/AGW_U15_P147_I1.png",
-        "answer": ["Raji is from India. He is Indian."],
+        "answer": ["Raji is from India. He is Indian"],
         "alternateanswer": [[]],
         "strictcase": "no", // yes (or) no  
         "strictorder": "yes", // yes (or) no              
@@ -70,7 +70,7 @@ var fillin_data = {
         "audio": "../audios/page_7/across_.mp3",
         "audioenable": "default", // correct (or) default
         "image": "../images/pages/activities/AGW_U15_P147_I1.png",
-        "answer": ["Greg is from America. He is American."],
+        "answer": ["Greg is from America. He is American"],
         "alternateanswer": [[]],
         "strictcase": "no", // yes (or) no  
         "strictorder": "yes", // yes (or) no              

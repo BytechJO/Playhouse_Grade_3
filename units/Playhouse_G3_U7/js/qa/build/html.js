@@ -93,7 +93,7 @@ function writeHtml(activity, activity_html){
 	
 	jQuery('.activity_container').html('<div class="sub_footer_icon subFooterNav backNav mx-1"> <a href=""> <img src="../images/icons/back_btn.png" /> </a> </div> <div class="sub_footer_icon subFooterNav nextNav mx-1"> <a href=""> <img src="../images/icons/next_btn.png" /> </a> </div>' +
 	htmlStmt +
-	'<div class="activity-content d-flex h-100  justify-content-center align-items-center">'+activity_html+'</div>');
+	'<div class="activity-content d-flex justify-content-center align-items-center">'+activity_html+'</div>');
 }
 
 function allowOnlyTrueAndFalse(obj) {

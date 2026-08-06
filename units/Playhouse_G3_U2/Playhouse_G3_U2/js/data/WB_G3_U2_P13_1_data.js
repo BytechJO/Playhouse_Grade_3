@@ -60,7 +60,7 @@ var fillin_data = {
             "audio": "../audios/page_13/under.mp3",
             "audioenable": "correct", // correct (or) default
             "image": "",
-            "answer": ["They sing spring songs and eat lots of cake! Families give presents to the kids and money to the poor. The city plants new trees to remember spring"],
+            "answer": ["The city plants new trees to remember spring"],
             "strictcase": "no", // yes (or) no
             "type": "text", // text (or) number
         },

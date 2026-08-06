@@ -110,7 +110,7 @@ var fillin_data = {
           "options_words_audios":["../audios/under.mp3","../audios/under.mp3","../audios/under.mp3"],
           "audioenable": "default", // correct (or) default
           "image": "",
-          "answer": ["bottles"],
+          "answer": ["can"],
           "alternateanswer": [[]],
           "strictcase": "no", // yes (or) no    
           "strictorder": "yes", // yes (or) no              
