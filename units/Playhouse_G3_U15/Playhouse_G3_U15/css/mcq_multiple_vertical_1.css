@@ -17,6 +17,10 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
+.pick_set{
+        display: flex;
+}
 .que{
     margin-bottom: 10px;
     /* border:1px solid #ececec; */

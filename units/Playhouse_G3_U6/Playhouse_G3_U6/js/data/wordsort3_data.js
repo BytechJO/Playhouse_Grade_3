@@ -66,7 +66,7 @@ var wordsort3_data = {
     { id: "w2", num: 2, text: "stick", category: "piece" },
     { id: "w3", num: 3, text: "jar", category: "container" },
 
-    { id: "w4", num: 4, text: "can", category: "measurement" },
+    { id: "w4", num: 4, text: "can", category: "container" },
     { id: "w5", num: 5, text: "tablespoons", category: "container" },
     { id: "w6", num: 6, text: "cup", category: "measurement" },
     { id: "w7", num: 7, text: "slice", category: "piece" },

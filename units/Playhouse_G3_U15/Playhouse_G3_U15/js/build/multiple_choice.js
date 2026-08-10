@@ -56,7 +56,7 @@ function buildMcqBody(aObj) {
 				currQueNum++;
 				var tpOb = (aObj.questions)[currQueNum -1];
 				if(typeof tpOb != undefined && tpOb != null ){
-					htmlStmt += '<div class="que d-flex flex-wrap" id="que_'+currQueNum+'" data-qno="'+currQueNum+'">';
+					htmlStmt += '<div class="que d-flex" id="que_'+currQueNum+'" data-qno="'+currQueNum+'">';
 					htmlStmt += '<div class="d-flex q_part">';
 					// htmlStmt += '<div class="q_num_space">a. </div>';
 					if(aObj.numbering != 'none'){
@@ -81,10 +81,11 @@ function buildMcqBody(aObj) {
 
 					htmlStmt += '</div>'; // - /q_part
 					htmlStmt += '<div class="d-flex flex-wrap picks_grp">';
-					
+					htmlStmt += '<div class="pick_set" id="pick_set_'+currQueNum+'_1">';
+
 					if((tpOb.options).length > 0){
                         for(var opt=0;opt<(tpOb.options).length;opt++){
-                            htmlStmt += '<div id="pick_'+(currQueNum)+'_'+(opt+1)+'" class="pick">';                            
+                            htmlStmt += '<div id="pick_'+(currQueNum)+'_1_'+(opt+1)+'" class="pick">';                            
                             htmlStmt += '<div class="txt">'+((tpOb.options)[opt]).text+'</div> ';    
 							// htmlStmt += '<div><img src="'+((tpOb.options)[opt]).image+'"/></div>';                               
                             htmlStmt += '</div>';
@@ -92,6 +93,7 @@ function buildMcqBody(aObj) {
                         
                     }
                    
+                    htmlStmt += '</div>';// - /pick_set
                     htmlStmt += '</div>';// - /picks_grp
 
 					htmlStmt += '<div class="icon_wrap p-2">';
@@ -117,4 +119,4 @@ function buildMcqBody(aObj) {
 }
 function nextChar(c) {
 	return String.fromCharCode(c.charCodeAt(0) + 1);
-}  
+}

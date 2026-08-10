@@ -128,7 +128,7 @@ var wordsearchwrite_data = {
 
   // the 5 pictures, in display order, each with its correct 'ee' word
   pictures: [
-    { image: "../images/pages/activities/4.png", answer: "star" },
+    { image: "../images/pages/activities/4.png", answer: "stars" },
     { image: "../images/pages/activities/5.png", answer: "car" },
     { image: "../images/pages/activities/2.jpg", answer: "park" },
     { image: "../images/pages/activities/6.jpg", answer: "guitar" },

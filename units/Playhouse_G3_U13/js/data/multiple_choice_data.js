@@ -148,7 +148,7 @@ var mcq_data = {
         {
             "question"              : "Yoshi",
             "image"                 : "",
-            "answer"                : [2,4],
+            "answer"                : [1,3],
             "audio"                 : "no",
             "audioenable"           : "default", // correct (or) default
             "numbering"				: "none", // alphabet (or) number (or) none

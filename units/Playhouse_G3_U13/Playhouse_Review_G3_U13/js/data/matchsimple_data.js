@@ -25,7 +25,7 @@ var matchsimple_data = {
                 { "id": "p2", "topPct": 24, "leftPct": 30 },
                 { "id": "p3", "topPct": 38, "leftPct": 60 },
                 { "id": "p4", "topPct": 60, "leftPct": 50 },
-                { "id": "p5", "topPct": 80, "leftPct": 35 },
+                { "id": "p5", "topPct": 57, "leftPct": 68 },
                 { "id": "p6", "topPct": 92, "leftPct": 60 }
             ],
             "leftItems": [

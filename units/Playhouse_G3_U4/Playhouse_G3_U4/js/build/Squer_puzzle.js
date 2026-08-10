@@ -40,7 +40,7 @@ function buildWordSearchBody(aObj) {
 			htmlStmt += '</div>';
 		htmlStmt += '</div>';
 
-        htmlStmt += '<div class="options cont_ht_sf d-flex flex-wrap">'; 
+        htmlStmt += '<div class="options d-flex flex-wrap">'; 
         htmlStmt += '<div class="all_cont justify-content-start justify-content-sm-center">';
         htmlStmt += '<div class="wordsearch_wrap d-flex align-items-center">';
         htmlStmt += '<div class="wordmatrix_holder">';

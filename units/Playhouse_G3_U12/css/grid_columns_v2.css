@@ -107,13 +107,35 @@
     padding: 0 25px;
 }
 
+/* NEW: نسب % بدل بكسل ثابت، عشان النص يتبع نفس نسبة صورتك دايمًا */
 .grid_with_background_image .snap_group_all {
-    width: 75%;
+    width: 88%;
     position: absolute;
-    top: 75px;
-    left: 280px;
+    top: 12%;
+    left: 6%;
     text-align: left;
-    line-height: 45px;
+    line-height: 1.6;
+}
+
+/* NEW: خط مائل (italic) متل الصورة الأصلية بالضبط */
+.ss_text {
+    font-style: italic;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+/* NEW: تباعد بين العمودين حتى ما يلمسوا حلقات التجليد بالنص */
+.col_card:first-child {
+    padding-right: 4%;
+}
+.col_card:last-child {
+    padding-left: 4%;
+}
+
+.reading_slide .col_grid_container img[style*="height"] {
+    width: 100%;
+    height: auto !important;
 }
 
 .grid_with_center_images {

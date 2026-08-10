@@ -106,10 +106,14 @@ function buildFillInBody(aObj) {
 				  }).join('<input class="text_input_area" type="text" maxlength="' + tmpObj.maxlength + '" data-type="' + tmpObj.type + '">');
 				}
 
+				// ---- NEW: images are now clickable "circle the correct
+				// picture" choices instead of plain decorative <img> tags ----
 				if (tmpObj.images != '' && tmpObj.images != undefined) {
 					htmlStmt += '<div class="q_image">';
 					  for(let img_index = 0; img_index < tmpObj.images.length; img_index ++){
+						  htmlStmt += '<div class="q_image_choice" data-index="' + img_index + '">';
 						  htmlStmt += '<img src="' + tmpObj.images[img_index] + '">';
+						  htmlStmt += '</div>';
 					  }
 					htmlStmt += '</div>';
 				}
@@ -168,4 +172,4 @@ function buildFillInBody(aObj) {
 }
 function nextChar(c) {
 	return String.fromCharCode(c.charCodeAt(0) + 1);
-}  
+}

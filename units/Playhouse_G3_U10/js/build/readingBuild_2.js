@@ -204,8 +204,9 @@ function buildReadingHTML(aObj) {
                             slideHtml += "</div>";
                         }
                     }
+                    console.log("slideHtml", slide.image)
                     if(slide.image != undefined && slide.image != ""){
-                        slideHtml += '<img class="text_img" src="'+slide.image+'">';
+                        slideHtml += '<img class="text_img" src="'+slide.image+'"/>';
                     }
                     slideHtml += "</div>";
                 slideHtml += "</div>";

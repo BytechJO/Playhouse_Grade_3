@@ -36,7 +36,7 @@ body{
 .wordmatrix{  
     position:relative;
     width: fit-content;
-   
+       /* margin-top: 74px; */
     /*padding: 1px; */
     margin: auto;
 }

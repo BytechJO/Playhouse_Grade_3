@@ -33,7 +33,7 @@ var wordsearch_data = {
             "selectionbooxcolor"    : "rgb(39, 150, 166)",
             "rows"                  : 9,
             "columns"               : 9,
-            "letters"               : "milkbtrre,snoinosib,maafprlci,fdralrces,hofaioesc,esethcuuu,gcusrebri,gghapheit,selppaces",
+            "letters"               : "milkbtrre,onionssib,maafprlci,fdralrces,hofaioesc,esethcuuu,gcusrebri,gghapheit,sappleses",
             "words"                 : [
                 {
                     "text"          : "milk",

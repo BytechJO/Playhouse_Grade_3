@@ -38,7 +38,7 @@ var fillin_data = {
             "audio": "../audios/under.mp3",
             "audioenable": "default", // correct (or) default
             "image": "",
-            "answer": ["They meet here three times a day at weekends"],
+            "answer": ["three times a day at weekends"],
             "strictcase": "no", // yes (or) no              
             "type": "text", // text (or) number
         },
@@ -47,7 +47,7 @@ var fillin_data = {
             "audio": "../audios/under.mp3",
             "audioenable": "default", // correct (or) default
             "image": "",
-            "answer": ["The drawers are white"],
+            "answer": ["They are white"],
             "strictcase": "no", // yes (or) no 
             "type": "text", // text (or) number
         },

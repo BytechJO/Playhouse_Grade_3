@@ -29,27 +29,21 @@ var reading_data = {
     "slides": [
         {
             "layout": "grid_columns",
-            "parentClassName":"reading_slide",
+            "parentClassName": "reading_slide",
+            // NEW: هاي هي الصورة الكاملة يلي فيها الإطار + الفراشات + البنت سوا
             "mainImage": ["../images/pages/page-5/1-background_1.png"],
             "parent_class_name": "full_grid_with_background_image",
             "group_styles": "",
-            "audio": ["../audios/page_100/Pg6_2.1_Stella.mp3","../audios/page_100/dough.mp3","../audios/page_100/sauce.mp3","../audios/page_100/sprinkle.mp3","../audios/page_100/cheese.mp3","../audios/page_100/add.mp3","../audios/page_100/pepperoni.mp3","../audios/page_100/slice.mp3"],
+            "audio": ["../audios/page_100/1.mp3", "../audios/page_100/2.mp3"],
+            // NEW: عمودين بس - نص القصة اليسار، تكملة القصة اليمين
             "word": [
-                "Little Helen was walking one day in the field with her mother and pointed to a tree. ‘Mummy,’ Helen said."+
-                "‘Look at that bug on the branch of the tree. What is that?’"+
-                "‘That’s a caterpillar,’ Mummy said. ‘This caterpillar will one day change into a butterfly.’ Helen was amazed."+ 
-                "She looked closely at the caterpillar. ‘But, Mummy, it has many little legs. It doesn’t have any wings. "+
-                "It doesn’t look like a butterfly.’ ‘That’s because it’s still a caterpillar,’ said Mummy. ‘After a while, this"+ 
-                "caterpillar will wrap itself in a cocoon and stay there until it turns into a butterfly.’"+
-                "‘Wow!’ said Helen. ‘I love butterflies. I think that they are the most beautiful of all bugs. They have the most"+ 
-                "colourful wings!’ ‘Look, Helen,’ Mummy said, ‘I can see a lot of butterflies over there next to the flowers.",
-                "Isn’t that the most wonderful sight ever?’ ‘Yes, Mummy!’ exclaimed Helen. ‘Today is the greatest day ever!’" ,
-               ],
-            "imagePlacePos":[
-                {"colWidth": [6,6], "colData": [1,1] },
-                // {"colWidth": [6,6], "colData": [0,0] },
-
+                "Little Helen was walking one day in the field with her mother and pointed to a tree. \u2018Mummy,\u2019 Helen said. \u2018Look at that bug on the branch of the tree. What is that?\u2019 \u2018That\u2019s a caterpillar,\u2019 Mummy said. \u2018This caterpillar will one day change into a butterfly.\u2019 Helen was amazed. She looked closely at the caterpillar. \u2018But, Mummy, it has many little legs. It doesn\u2019t have any wings. It doesn\u2019t look like a butterfly.\u2019 \u2018That\u2019s because it\u2019s still a caterpillar,\u2019 said Mummy. \u2018After a while, this caterpillar will wrap itself in a cocoon and stay there until it turns into a butterfly.\u2019 \u2018Wow!\u2019 said Helen. \u2018I love butterflies. I think that they are the most beautiful of all bugs. They have the most colourful wings!\u2019 \u2018Look, Helen,\u2019 Mummy said, \u2018I can see a lot of butterflies over there next to the flowers.",
+                "Isn\u2019t that the most wonderful sight ever?\u2019 \u2018Yes, Mummy!\u2019 exclaimed Helen. \u2018Today is the greatest day ever!\u2019"
+            ],
+            "imagePlacePos": [
+                { "colWidth": [6, 6], "colData": [1, 1] }
             ]
-        },
+            // NEW: ما في داعي أبدًا لحقل "image" هون - الرسمة موجودة أصلاً بالـ mainImage
+        }
     ]
 }
