@@ -58,10 +58,11 @@
 
 .activity_container input[type="text"],
 .fill_orders_activity input[type="number"] {
-    border: none;
-    border-bottom: #212529 solid 3px;
+    /* border: none; */
+    /* border-bottom: #212529 solid 3px; */
 	width: 27%;
-       margin: -4px;
+       /* margin: -4px; */
+       margin-top:20px
 }
 
 .drag_drop_activity input[type="text"],

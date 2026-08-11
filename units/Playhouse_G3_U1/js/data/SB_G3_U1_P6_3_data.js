@@ -69,7 +69,7 @@ var fillin_data = {
         "audio": "",
         "audioenable": "default", // correct (or) default
         "image": "",
-        "answer": ["Where is his from?"],
+        "answer": ["Where is he from?"],
         "alternateanswer": [[]],
         "strictcase": "no", // yes (or) no     
         "strictorder": "yes", // yes (or) no             
